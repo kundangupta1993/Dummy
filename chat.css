@@ -1,0 +1,650 @@
+#chat_container {
+    z-index : 9999999999;
+    display : none;
+    height : 100%;
+    color : black;
+    font-family : Roboto, "Helvetica Neue", sans-serif;
+    background-color : #f7f8fa;
+    -webkit-font-smoothing : antialiased;
+}
+
+body.chat_hover {
+    z-index : 9999;
+}
+
+body.chat_open #chat_container {
+    display : block;
+}
+
+#chat_header, .popup_header {
+    position : relative;
+    box-sizing : border-box;
+    height : 44px;
+    padding : 12px;
+    color : rgba(0, 0, 0, 0.9);
+    background : #fafafa;
+    box-shadow : 0 1px 2px 0 #e6e6e6;
+}
+
+#rate-popup .popup_header {
+    height : 142px;
+}
+
+.popup_header {
+    height : initial;
+}
+
+.img-msg {
+    max-width : 258px;
+    max-height : 225px;
+    border : solid 4px #ecf4ff;
+    border-radius : 8px;
+    cursor : pointer;
+}
+
+.chat-popup {
+    position : absolute;
+    top : 0px;
+    left : 0px;
+    z-index : 99999;
+    width : 100%;
+    height : 100%;
+    text-align : center;
+    background : white;
+}
+
+.chat-popup #close-popup {
+    position : absolute;
+    right : 5px;
+    color : #b0bec5;
+    font-size : 17px;
+    cursor : pointer;
+}
+
+.chat-popup .popup_header {
+    background : white;
+}
+
+.chat-popup .popup-content {
+    height : calc(100% - 143px);
+    padding : 20px;
+    overflow-y : auto;
+    background : #f7f8fa;
+    border : solid 1px #e5e5e5;
+}
+
+.chat-popup #popup_title {
+    font-size : 12px;
+}
+
+.chat-popup .submitter_avatar {
+    margin : 10px auto;
+}
+
+#chat_menu_button {
+    cursor : pointer;
+}
+
+#chat_title {
+    display : block;
+    margin : 0 24px 0 10px;
+    overflow : hidden;
+    font-size : 14px;
+    line-height : 28px;
+    white-space : nowrap;
+    text-overflow : ellipsis;
+}
+
+#chat_container.rtl #chat_title {
+    margin : 0 10px 0 24px;
+}
+
+#chat_container.messages #chat_title {
+    vertical-align : top;
+}
+
+#chat_close_button {
+    position : absolute;
+    top : 12px;
+    right : 12px;
+    cursor : pointer;
+}
+
+#chat_container.rtl #chat_close_button {
+    right : initial;
+    left : 12px;
+}
+
+#chat_content {
+    position : relative;
+    height : calc(100% - (44px + 48px));
+    background-color : #efefef;
+}
+
+#chat_content.typing {
+    padding-bottom : 20px;
+}
+
+#chat_content #chat_typing {
+    position : absolute;
+    bottom : 0;
+    left : 0;
+    margin-left : 5px;
+}
+
+#chat_content #chat_typing span {
+    font-size : 14px;
+}
+
+#chat_content #messages {
+    height : 100%;
+    overflow-y : auto;
+
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.conversation_item {
+    position : relative;
+    box-sizing : border-box;
+    width : 100%;
+    height : 87px;
+    padding : 5px 8px 5px 76px;
+    border-bottom : 1px solid #eeeeee;
+    cursor : pointer;
+}
+
+.conversation_item:hover {
+    background-color : rgba(158, 158, 158, 0.2);
+}
+
+.submitter_avatar {
+    width : 50px;
+    height : 50px;
+    color : white;
+    font-size : 25px;
+    line-height : 50px;
+    text-align : center;
+    background-repeat : no-repeat;
+    background-position : center;
+    background-size : cover;
+    box-shadow : 0 1px 2px 0 rgba(0, 0, 0, 0.325);
+}
+
+.conversation_item .submitter_avatar {
+    position : absolute;
+    left : 0;
+    display : inline-block;
+    box-sizing : border-box;
+    margin : 13px;
+}
+
+.submitter_name, .chat-popup .popup-title {
+    display : block;
+    margin-right : 65px;
+    overflow : hidden;
+    white-space : nowrap;
+    text-overflow : ellipsis;
+    vertical-align : top;
+}
+
+.chat-popup .popup-title {
+    margin-bottom : 3px;
+}
+
+.popup-subtitle {
+    color : #444444;
+    font-size : 14px;
+}
+
+.conversation_text {
+    margin : 5px 0 0 0;
+    overflow : hidden;
+    color : #7a7a7a;
+    font-size : 14px;
+    line-height : 20px;
+}
+
+.conversation_time {
+    position : absolute;
+    top : 5px;
+    right : 8px;
+    color : #7a7a7a;
+    font-size : 12px;
+}
+
+.message_item {
+    padding : 10px 35px 10px 10px;
+}
+
+#chat_container.rtl .message_item {
+    padding : 10px 10px 10px 35px;
+}
+
+.message_item .message_title {
+    font-weight : 300;
+    font-size : 12px;
+    font-style : italic;
+    text-align : right;
+}
+
+.message_item .message_title span span {
+    margin : 0 0 0 12px;
+}
+
+#chat_container.rtl .message_item .message_title span span {
+    margin : 0 6px 0 0;
+}
+
+#chat_container.rtl .message_item .message_title {
+    text-align : left;
+}
+
+.message_item .message_title i {
+    width : 12px;
+}
+
+.message_item .message_title i.read {
+    color : #14bd00;
+}
+
+.message_item .message_content {
+    position : relative;
+    margin-top : 4px;
+    padding : 8px 8px 10px 17px;
+    font-size : 16px;
+    word-wrap : break-word;
+    border-top : 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow : 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+}
+
+.message_item.you .message_content {
+    background-color : #e1f5d9;
+    border-radius : 6px 0 6px 6px;
+}
+
+#chat_container.rtl .message_content {
+    padding : 8px 17px 10px 8px;
+}
+
+#chat_container.rtl .message_item.you .message_content {
+    border-radius : 0 6px 6px 6px;
+}
+
+.message_item.other .message_content {
+    background-color : #ecf4ff;
+    border-radius : 0 6px 6px 6px;
+}
+
+.message_item .input_email_content {
+    position : relative;
+    margin-top : 4px;
+    padding : 8px 8px 10px 17px;
+    font-size : 16px;
+    word-wrap : break-word;
+
+    background-color : #ffffff;
+    border-top : 1px solid rgba(0, 0, 0, 0.1);
+    border-radius : 6px 6px 6px 6px;
+
+    box-shadow : 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+
+}
+
+.input_addon {
+    display : flex;
+    margin-top : 8px;
+    margin-right : 4px;
+}
+
+.blueBackground {
+    margin-top : 8px;
+    margin-right : 8px;
+    padding : 8px;
+    text-align : center;
+    background-color : #3498db;
+    border-radius : 6px 6px 6px 6px;
+}
+
+.input_addon_field {
+    flex : 1;
+    width : 100%;
+    padding : 8px;
+    border : 1px solid;
+    border-color : #3498db;
+    border-radius : 6px 0 0 6px;
+}
+
+.input_addon_field.name::placeholder {
+    font-size : 16px;
+}
+
+.input_addon_item {
+    display : flex;
+    background-color : #3498db;
+    border : 1px solid;
+    border-color : #3498db;
+    border-radius : 0 6px 6px 0;
+}
+
+.success_text {
+    margin-top : 14px;
+    color : #3498db;
+    text-align : center;
+}
+
+.validation_failed_text {
+    margin-top : 14px;
+    color : #cc0000;
+}
+
+.success_email_icon {
+    color : #ffffff;
+    vertical-align : middle;
+}
+
+.input_email_icon {
+    color : #ffffff;
+}
+
+#chat_container.rtl .message_item.other .message_content {
+    border-radius : 6px 0 6px 6px;
+}
+
+.message_item.other .message_content .doc-card {
+    margin-bottom : 10px;
+    overflow : hidden;
+    border-radius : 5px;
+    -webkit-box-shadow : 0 0 4px 0 #cccccc !important;
+    -moz-box-shadow : 0 0 4px 0 #cccccc !important;
+    box-shadow : 0 0 4px 0 #cccccc !important;
+}
+
+.message_item.other .message_content .doc-card img {
+    display : block;
+    margin : auto;
+}
+
+.message_item.other .message_content a {
+    color : #428bca;
+}
+
+.message_item.other .message_content .doc-card span {
+    display : block;
+    padding : 5px;
+    background : white;
+
+}
+
+.message_item.other .message_content_container {
+    position : relative;
+    min-height : 50px;
+    padding : 0 0 0 67px;
+}
+
+#chat_container.rtl .message_item.other .message_content_container {
+    padding : 0 67px 0 0;
+}
+
+.message_item.other .message_content_container .submitter_avatar {
+    position : absolute;
+    top : 1px;
+    left : 0;
+}
+
+#chat_container.rtl .message_item.other .message_content_container .submitter_avatar {
+    right : 0;
+    left : initial;
+}
+
+.message_item .message_title i {
+    font-size : 20px;
+    vertical-align : middle;
+}
+
+.message_typing {
+    padding-left : 10px;
+    color : #565656;
+    font-size : 12px;
+}
+
+.message_typing strong {
+    color : #5f5f5f;
+    font-weight : 500;
+}
+
+#chat_footer {
+    box-sizing : border-box;
+    height : 48px;
+    padding : 4px;
+    text-align : center;
+    background-color : #ececec;
+}
+
+#chat_new_conversation_button {
+    box-sizing : border-box;
+    height : 40px;
+    padding : 0 6px;
+    color : rgba(255, 255, 255, 0.87);
+    font-size : 14px;
+    font-family : Roboto, "Helvetica Neue", sans-serif;
+    line-height : 36px;
+    text-align : center;
+    text-transform : uppercase;
+    background-color : rgb(198, 40, 40);
+    border : 0;
+    border-radius : 3px;
+    outline : none;
+    box-shadow : 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    cursor : pointer;
+}
+
+#_chat_input {
+    box-sizing : border-box;
+    width : calc(100% - 30px);
+    height : 40px;
+    padding-right : 10px;
+    padding-left : 10px;
+    font-size : 16px;
+    outline : none;
+}
+
+#chat_send {
+    vertical-align : sub;
+    cursor : pointer;
+}
+
+#chat_container.rtl #chat_send {
+    -moz-transform : scale(-1, 1);
+    -webkit-transform : scale(-1, 1);
+    -o-transform : scale(-1, 1);
+    -ms-transform : scale(-1, 1);
+    transform : scale(-1, 1);
+}
+
+#chat_container.conversations #chat_menu_button,
+#chat_container.messages.one_message #chat_menu_button,
+#chat_container.conversations #_chat_input,
+#chat_container.conversations #chat_send,
+#chat_container.messages #chat_new_conversation_button,
+#chat_container.conversations #chat_footer {
+    display : none;
+}
+
+#preview_message_container {
+    position : fixed;
+    top : 14px;
+    right : 20px;
+    z-index : 99999999;
+    width : 270px;
+    color : black;
+}
+
+#image-icon {
+    font-size : 32px;
+}
+
+body.chat_open #preview_message_container {
+    display : none;
+}
+
+#preview_message_container .chat_preview {
+    position : relative;
+    min-height : 70px;
+    padding : 10px 2px 10px 10px;
+    background-color : #fafafb;
+    border : solid 1px #e3e3e3;
+    border-radius : 4px;
+    box-shadow : 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    cursor : pointer;
+}
+
+#preview_message_container.rtl .chat_preview {
+    padding : 10px 10px 10px 2px;
+}
+
+#close-icon {
+    position : absolute;
+    top : 0;
+    left : 0;
+    z-index : 999;
+    display : none;
+    font-size : 20px;
+    opacity : 0.5;
+}
+
+#close-icon:hover {
+    opacity : 1;
+}
+
+#preview_message_container .chat_preview:hover #close-icon {
+    display : block;
+}
+
+#preview_message_container .chat_preview .submitter_avatar {
+    position : absolute;
+}
+
+#preview_message_container .chat_preview p {
+    margin-left : 60px;
+    color : #585858;
+    font-size : 14px;
+    letter-spacing : 0.4px;
+    vertical-align : top;
+}
+
+#preview_message_container.rtl .chat_preview p {
+    margin-right : 60px;
+    margin-left : 0;
+}
+
+#preview_message_container .chat_preview:not( :last-child ) {
+    margin-bottom : 10px;
+}
+
+.chat-popup .submitter_name, .chat-popup .popup-title {
+    margin : auto;
+}
+
+.chat-popup .star-container {
+    width : 193px;
+    height : 35px;
+    margin : 20px auto;
+}
+
+.chat-popup .star-container i {
+    display : inline-block;
+    width : 35px;
+    height : 35px;
+    background-size : 100%;
+    background-size : 100% 100%;
+    cursor : pointer;
+}
+
+.chat-popup textarea {
+    width : 100%;
+    height : 200px;
+    margin-bottom : 10px;
+    padding : 10px;
+}
+
+.chat-popup .you-name {
+    text-align : left;
+}
+
+.chat-popup .name-input-container {
+    margin : 5px;
+    text-align : left;
+}
+
+.chat-popup .name-input-container input {
+    width : 49%;
+    padding : 8px;
+}
+
+.name-input-container input, textarea {
+    border : 1px solid #444444;
+}
+
+#chat-submit-rating {
+    width : 100%;
+    height : 31px;
+    margin-top : 15px;
+    color : #f1644a;
+    background : transparent;
+    border : solid 1px #f1644a;
+    border-radius : 2px;
+}
+
+.rating-half-star {
+    background : url("data:image/png;base64,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");
+}
+
+.rating-full-star {
+    background : url("data:image/png;base64,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");
+}
+
+.rating-empty-star {
+    background : url("data:image/png;base64,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");
+}
+
+.thumbnail-container {
+    width : 330px;
+    height : 176px;
+    margin : auto;
+    background-repeat : no-repeat;
+    background-position : center center;
+    background-size : cover;
+}
+
+@media screen and ( min-width : 768px ) {
+    #chat_container {
+        position : fixed;
+        top : 0;
+        right : 0;
+        width : 366px;
+        box-shadow : -1px 0 4px 0 rgba(0, 0, 0, 0.1);
+    }
+}
+
+@media screen and ( max-width : 767px ) {
+    #chat_container {
+        position : fixed;
+        top : 0;
+        left : 0;
+        width : 100%;
+    }
+}
+
+.hide-all-body-chat-is-open{
+    position : fixed;
+    top : 0px;
+    right : 0px;
+    bottom : 0px;
+    left : 0px;
+}
+
+#chat_content .message_content {
+    white-space : pre-line;
+}
