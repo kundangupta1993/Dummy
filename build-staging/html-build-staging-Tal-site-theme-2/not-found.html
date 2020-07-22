@@ -1,0 +1,76 @@
+<!DOCTYPE html><html class="property-fullsize" lang="en"><head><meta charset="utf-8"><meta name="robots" content="noindex, nofollow"><meta name="timestamp" content="2019/11/06/ 13-50-34"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="format-detection" content="telephone=no">{{#if Meta_Description}}<meta name="description" content="{{Meta_Description}}">{{else}}<meta name="description" content="We are a boutique financial planning practice. Our expertise will help you get greater results. We use a variety of modern communication techniques to communicate with our clients, locally, intra and interstate. Leave us a message and let us advise you.">{{/if}}
+{{#if pageMetadata.metaTitle}} <title>{{pageMetadata.metaTitle}}</title>{{else}}<title>{{#if currentBu.businessUnit.displayName }} {{ currentBu.businessUnit.displayName }}{{/if}} | Not Found</title>{{/if}}
+{{#if businessUnitStyle.logos.favicon}}<link rel="icon" href="{{businessUnitStyle.logos.favicon}}" type="image/png"><link rel="icon" href="{{businessUnitStyle.logos.favicon}}" type="image/x-icon">{{else}}<link rel="icon" href="//ddppor7579eia.cloudfront.net/preproduction/images/icon/favicon/favicon.ico?cbh=7d33262b6057603b65b6dd682a21051920191106135034" type="image/png"><link rel="icon" href="//ddppor7579eia.cloudfront.net/preproduction/images/icon/favicon/favicon.ico?cbh=7d33262b6057603b65b6dd682a21051920191106135034" type="image/x-icon">{{/if}}<link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600|Raleway:400,500,700|Roboto:400,500,700&amp;amp;subset=latin-ext" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css"><link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/5.7.8/css/jquery.mmenu.all.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/5.7.8/extensions/positioning/jquery.mmenu.positioning.css"><style>.banner-top-wrapper .cover-image {
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+:root {
+    --primary-color-1: {{#if businessUnitStyle.colorPalette.primary }}{{businessUnitStyle.colorPalette.primary }};{{else}}#0f0f35;{{/if}}
+    --secondary-color-1: {{#if businessUnitStyle.colorPalette.accents.color1 }}{{ businessUnitStyle.colorPalette.accents.color1 }};{{else}}#17bfbe;{{/if}}
+    --secondary-color-2: {{#if businessUnitStyle.colorPalette.accents.color2 }}{{ businessUnitStyle.colorPalette.accents.color2 }};{{else}}#0f0f35;{{/if}}
+    --secondary-color-3: {{#if businessUnitStyle.colorPalette.accents.color3 }}{{ businessUnitStyle.colorPalette.accents.color3 }};{{else}}#17bfbe;{{/if}}
+    --secondary-color-4: {{#if businessUnitStyle.colorPalette.accents.color4 }}{{ businessUnitStyle.colorPalette.accents.color4 }};{{else}}#ffffff;{{/if}}
+    --logo-url: url({{businessUnitStyle.logos.web}});
+    }</style><link rel="stylesheet" href="//d4kcggv2s2ep2.cloudfront.net/tal/new/css/cropper-custom-styles.css"><link rel="stylesheet" href="//ddppor7579eia.cloudfront.net/preproduction/css/style.css?cbh=8295668a702e73a57332b18370f576fb20191106135034"><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><script>if(/MSIE \d|Trident.*rv:/.test(navigator.userAgent)){
+    //-Fix for ie11 css variables
+    //-This fix must be below jQuery <script>
+    //-We load style file, find-replace all css variables with handlebars data
+    //-Then we create <style>, add this updated css and append it to head
+    jQuery.get("https://s3-ap-southeast-2.amazonaws.com/studio.gf.tal/preproduction/css/ie/style.css", function(response) {
+        var primarycolor1 = "{{#if businessUnitStyle.colorPalette.primary }}{{businessUnitStyle.colorPalette.primary }}{{else}}#0f0f35{{/if}}"
+        var secondarycolor1 = "{{#if businessUnitStyle.colorPalette.accents.color1 }}{{ businessUnitStyle.colorPalette.accents.color1 }}{{else}}#17bfbe{{/if}}"
+        var secondarycolor2 = "{{#if businessUnitStyle.colorPalette.accents.color2 }}{{ businessUnitStyle.colorPalette.accents.color2 }}{{else}}#0f0f35{{/if}}"
+        var secondarycolor3 = "{{#if businessUnitStyle.colorPalette.accents.color3 }}{{ businessUnitStyle.colorPalette.accents.color3 }}{{else}}#17bfbe{{/if}}"
+        var secondarycolor4 = "{{#if businessUnitStyle.colorPalette.accents.color4 }}{{ businessUnitStyle.colorPalette.accents.color4 }}{{else}}#ffffff{{/if}}"
+        var logourl = "url({{businessUnitStyle.logos.web}})"
+
+        var css = response;
+
+        css = css.replace(/var\(\-\-primary\-color\-1\)/gm, primarycolor1).replace(/var\(\-\-secondary\-color\-1\)/gm, secondarycolor1).replace(/var\(\-\-secondary\-color\-2\)/gm, secondarycolor2).replace(/var\(\-\-secondary\-color\-3\)/gm, secondarycolor3).replace(/var\(\-\-secondary\-color\-4\)/gm, secondarycolor4).replace(/var\(\-\-logo\-url\)/gm, logourl);
+
+        var head = document.head || document.getElementsByTagName('head')[0];
+        var style = document.createElement('style');
+        head.appendChild(style);
+        style.type = 'text/css';
+        style.appendChild(document.createTextNode(css));
+        console.log('style was appended in ie11 only')
+    });
+}</script><script>(function(w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({
+        'gtm.start':
+            new Date().getTime(), event: 'gtm.js'
+    });
+    var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+    j.async = true;
+    j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+    f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-5SVN322');
+
+
+</script></head><body class="page-theme-agency page-lang-en page-name-not-found  "><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5SVN322" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><main class="no-found"><section><div class="container"><div class="row"><div class="col-xs-12"><div class="not-found-content"><h1 class="title"><span>Whoops,</span> you&apos;ve found our 404 page...</h1><p class="subtitle">The page you requested was not found, and we might have a good idea why.</p><ul class="generic-list with-dots"><li>If you typed the URL directly, please make sure the spelling is correct.</li><li>If you clicked on a link to get here, the link might be outdated or moved due to our recent website revamp.</li></ul><p class="text-regular"><span>What can you do?</span> Have no fear, help is near!</p><p class="text-regular text-link">Make a fresh start on our<strong> <a href="/">home page.</a></strong></p></div></div></div></div></section></main><script>function filterArr(arr, filterOut) {
+    var newArr = [];
+
+    for(var i = 0; i < arr.length; i++) {
+        if(arr[i] !== filterOut) {
+            newArr.push(arr[i]);
+        }
+    }
+
+    return newArr;
+}
+function redirect() {
+    setTimeout(function() {
+        var pathArr = document.location.pathname.split("/")
+        pathArr = filterArr(pathArr, "");
+        var path = "/";
+        for(var i = 0; i < pathArr.length - 1; i++) {
+            path += pathArr[i] + "/";
+        }
+        //- console.log(path);
+        document.location.href = path;
+    }, 7000);
+}
+window.addEventListener("load", redirect);</script></body></html>

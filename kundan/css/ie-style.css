@@ -1,0 +1,115 @@
+/* a{color: var(--secondary-color-1);outline: 0} */
+/* a:hover, a:focus {color: var(--secondary-color-2);outline: 0} */
+
+header#header { background-color: var(--primary-color-1); }
+.navigation li:hover a{ color: #0A4660; }
+.navigation li:hover a span::before {background-color: #0A4660;}
+.navigation li.active a{ color: var(--secondary-color-1); }
+.navigation li.active a span::before{ background-color: var(--secondary-color-1); }
+.navigation li.active:hover a{ color: #0A4660; }
+.navigation li.active:hover a span::before{ background-color: #0A4660; }
+
+.navigation .menu_list_row li.request-call,
+.tabs-icon-box .tabs-icon{background-color: var(--secondary-color-1);}
+.tabs-icon-box .tabs-icon:hover{background-color: #0A4660;}
+.navigation .menu_list_row li.request-call:hover {background-color: #0A4660;}
+.job-info-box{border-top: 7px solid var(--secondary-color-1);}
+.tabing-box ul.tabs, .tab-content{ background-color: var(--secondary-color-1); }
+
+.about-us-detils h2 {color: var(--secondary-color-3);}
+.banner-heading h1 {color: var(--secondary-color-2);}
+.banner-heading h3 {color: var(--secondary-color-2);}
+.no-banner-featured-img .banner-heading h1{ color:#000000; }
+.no-banner-featured-img .banner-heading h3{ color:#000000; }
+
+.tabing-box ul.tabs li:hover svg path, .tabing-box ul.tabs li:hover svg g{fill: #0A4660;}
+ul.tabs li.current::before, ul.tabs li:hover::before {background:#000000;}
+ul.tabs li:hover::before { background:#0A4660;}
+.close-icon:hover span { background: #0A4660; }
+.tooltip-close-btn:hover path{ fill:#0A4660;}
+
+a.read-more, 
+a.calculator-link,
+a.services-details-btn,
+a.notes-footnotes,
+a.back-link,
+a.notes-footnotes,
+a.download-document-pdf {color: var(--secondary-color-4);outline: 0;}
+
+a.read-more:hover,
+a.calculator-link:hover,
+a.services-details-btn:hover,
+a.notes-footnotes:hover,
+a.back-link:hover,
+a.notes-footnotes:hover,
+a.download-document-pdf:hover {color: #0A4660; }
+
+a.read-more::after, a.calculator-link::after, a.services-details-btn:after, a.notes-footnotes:after, a.download-document-pdf:after, a.back-link:after {color: var(--secondary-color-4);outline: 0;}
+a.read-more:hover::after, a.calculator-link:hover::after, a.services-details-btn:hover::after, a.back-link:hover::after, a.notes-footnotes:hover::after, a.download-document-pdf:hover::after, a.back-link:hover::after {color: #0A4660;outline: 0;}
+/*a.services-details-btn:hover::after, a.services-details-btn::after {color: #ffffff;}*/
+.services-details .details-leading-box a:hover {color: #0A4660;}
+
+a.external-links{text-transform: none;color: #0C7CB0;color: var(--secondary-color-4);}
+a.external-links:hover{color: #0A4660;}
+
+ul.offertabs li.active::before, 
+ul.advice-process li.active::before,
+ul.knowledge-tab li.active::before{ background-color: var(--secondary-color-4); }
+ul.offertabs li.active:hover::before,
+ul.advice-process li.active:hover::before,
+ul.knowledge-tab li.active:hover::before{ background-color:#0A4660; }
+ul.offertabs li:hover:before,
+ul.advice-process li:hover:before,
+ul.knowledge-tab li:hover:before {background-color: #0A4660;}
+
+.swiper-button-prev:before, .swiper-button-next:after{ color: var(--secondary-color-4); }
+.swiper-button-prev:hover:before, .swiper-button-next:hover:after{ color: #0A4660; }
+.reviews-infoicon svg, .reviews-infoicon svg g, .reviews-infoicon svg path {fill: var(--secondary-color-4);}
+
+.block-social .social-icon:first-child svg path {stroke: var(--secondary-color-4);}
+.block-social .social-icon:last-child svg g {stroke: var(--secondary-color-4);}
+.block-social .social-icon:first-child a:hover svg path {stroke:#0A4660;}
+.block-social .social-icon:last-child a:hover svg g {stroke:#0A4660;}
+
+footer {background-color: var(--secondary-color-1);}
+
+.copyright-row .social-links li a:hover svg, .copyright-row .social-links li a:hover g, .copyright-row .social-links li a:hover circle{ stroke: #0A4660; }
+.copyright-row .social-links li a:hover path{ fill: #0A4660; }
+
+.facts-and-figures-row {background-color: var(--secondary-color-1);}
+ul.knowledge-tab li.active::before,
+.news-artical-box h4::after,
+.testimonials-feed .page-heading h2::before,
+.our-team-info .Office-and-administration:before{background-color: var(--secondary-color-1);}
+
+.form-group input:focus, .form-group textarea:focus {border: solid 1px var(--secondary-color-1);}
+
+.get-started-featured-heading a.read-more{background-color: var(--secondary-color-1);}
+.get-started-featured-heading a.read-more:hover {background-color: #0A4660;}
+
+.start-chat-box .start-chat{background-color: var(--secondary-color-1);}
+.start-chat-box .start-chat:hover {background-color: #0A4660;}
+
+.form-submit-wrapper .form-submit-btn{background-color: var(--secondary-color-1);}
+.form-submit-wrapper .form-submit-btn:hover{background-color: #0A4660;}
+.office-address-box .place_name_row span {color: var(--secondary-color-1);}
+
+.send-message .page-heading h2::before{background-color: var(--secondary-color-1);}
+.customMapBubble .infoBox p.actions a, .email_phone p.contact_num a,
+.customMapBubble .infoBox p.actions:after { color: var(--secondary-color-4);}
+.customMapBubble .infoBox p.actions a:hover, .email_phone p.contact_num a:hover,
+.customMapBubble .infoBox p.actions:hover:after { color: #0A4660;}
+.customMapBubble .infoBox .contact_num:hover a, .customMapBubble .infoBox .contact_num:hover p,
+.customMapBubble .infoBox .contact_email:hover a, .customMapBubble .infoBox .contact_email:hover p{color:#0A4660;}
+ 
+.forms-and-documents-box .download-link img, .forms-and-documents-box .download-link rect {
+stroke: var(--secondary-color-4);}
+.forms-and-documents-box .download-link polygon{fill: var(--secondary-color-4);}
+.forms-and-documents-box .download-link:hover svg polygon {fill: #0A4660;}
+.forms-and-documents-box .download-link:hover svg rect{stroke: #0A4660;}
+
+.office-address-box .place_name_row span{color: var(--secondary-color-4);}
+.office-address-box .place_name_row span:hover{color: #0A4660;}
+
+.customers-reviews-box{ position:relative; } 
+a.close-popup:hover path, .close-prduct-popup:hover path {fill: #0A4660;}

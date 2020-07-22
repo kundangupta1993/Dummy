@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="index, follow">
+  <meta name="timestamp" content="2020/02/01/">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  {{#if pageMetadata.metaDescription}}
+  <meta name="description" content="{{pageMetadata.metaDescription}}">
+  {{else}}
+  <meta name="description" content="Tal-Knowledge Centre Artical">
+  {{/if}}
+  {{#if pageMetadata.metaTitle}} 
+  <title>{{pageMetadata.metaTitle}}</title>
+  {{else}}
+  <title>{{#if currentBu.businessUnit.displayName }} {{ currentBu.businessUnit.displayName }}{{/if}} | Knowledge Centre Artical</title>
+  {{/if}}
+  {{#if businessUnitStyle.logos.favicon}}
+  <link rel="icon" href="{{businessUnitStyle.logos.favicon}}" type="image/png">
+  <link rel="icon" href="{{businessUnitStyle.logos.favicon}}" type="image/x-icon">
+  {{else}}
+  <link rel="icon" href="https://s3-eu-west-1.amazonaws.com/studio.gf.staging/tal/tal-au/assets/images/favicon.png" type="image/png">
+  <link rel="icon" href="https://s3-eu-west-1.amazonaws.com/studio.gf.staging/tal/tal-au/assets/images//favicon.ico" type="image/x-icon">
+  {{/if}}
+	
+	<script type="text/javascript" nonce="c62623ccf0b4496f98d2f9fc3b3" src="//local.adguard.org?ts=1565008694968&amp;type=content-script&amp;dmn=s3.eu-west-1.amazonaws.com&amp;css=1&amp;js=1&amp;gcss=1&amp;rel=1&amp;rji=1"></script>
+	<script type="text/javascript" nonce="c62623ccf0b4496f98d2f9fc3b3" src="//local.adguard.org?ts=1565008694968&amp;name=AdGuard%20Assistant&amp;name=AdGuard%20Popup%20Blocker&amp;name=Web%20of%20Trust&amp;name=Adguard%20Extra&amp;type=user-script"></script>
+
+	<link href="https://s3-eu-west-1.amazonaws.com/studio.gf.staging/tal/tal-au/assets/css/jquery-ui.css" rel="stylesheet" type="text/css">
+	<link href="https://s3-eu-west-1.amazonaws.com/studio.gf.staging/tal/tal-au/assets/css/swiper.css" rel="stylesheet" type="text/css">
+	<link href="https://s3-eu-west-1.amazonaws.com/studio.gf.staging/tal/tal-au/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="https://s3-eu-west-1.amazonaws.com/studio.gf.staging/tal/tal-au/assets/css/nice-select.css" rel="stylesheet" type="text/css">
+	<link href="https://s3-eu-west-1.amazonaws.com/studio.gf.staging/tal/tal-au/assets/css/style.css" rel="stylesheet" type="text/css">
+
+	<!-- Google Tag Manager-->
+    <script>
+      (function (w, d, s, l, i) {
+          w[l] = w[l] || [];
+          w[l].push({
+              'gtm.start':
+                  new Date().getTime(), event: 'gtm.js'
+          });
+          var f = d.getElementsByTagName(s)[0],
+              j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+          j.async = true;
+          j.src =
+              'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+          f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-PC8S2B7');
+    </script>
+    <!-- End Google Tag Manager-->
+	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-3091398-2"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-3091398-2');
+	</script>
+	
+<style>
+    :root {
+        --primary-color-1: {{#if businessUnitStyle.colorPalette.primary }} {{ businessUnitStyle.colorPalette.primary }} {{else}} #ea1633 {{/if}};
+        --secondary-color-1: {{#if businessUnitStyle.colorPalette.accents.color1 }} {{ businessUnitStyle.colorPalette.accents.color1 }} {{else}} #03363d {{/if}};
+        --secondary-color-2: {{#if businessUnitStyle.colorPalette.accents.color2 }} {{ businessUnitStyle.colorPalette.accents.color2 }} {{else}} #009ba5 {{/if}};
+        --secondary-color-3: {{#if businessUnitStyle.colorPalette.accents.color3 }} {{ businessUnitStyle.colorPalette.accents.color3 }} {{else}} #fff {{/if}};
+        --secondary-color-4: {{#if businessUnitStyle.colorPalette.accents.color4 }} {{ businessUnitStyle.colorPalette.accents.color4 }} {{else}} #17bfbe {{/if}};
+        --logo-url: url({{ businessUnitStyle.logos.web }});
+    }
+	
+	input[type=tex]::-ms-clear {  display: none; width : 0; height: 0; }
+	input[type=text]::-ms-reveal {  display: none; width : 0; height: 0; }
+	input[type=email]::-ms-clear {  display: none; width : 0; height: 0; }
+	input[type=email]::-ms-reveal {  display: none; width : 0; height: 0; }
+	input[type=tel]::-ms-clear {  display: none; width : 0; height: 0; }
+	input[type=tel]::-ms-reveal {  display: none; width : 0; height: 0; }
+</style>
+
+</head>
+
+<body>
+
+<div class="main-wrapper" id="page">
+
+<header id="header">
+	<div class="container">
+	<div class="logo"><a href="/"><img src="{{businessUnitStyle.logos.web}}" alt="logo"></a></div>
+	
+		<nav class="navigation">			
+			<a class="toggle-nav" href="javascript:void(0)">
+			  <div class> <span class="top"></span> <span class="middle"></span> <span class="bottom"></span> </div>
+			</a>
+			<div class="menu_list">
+				<ul class="menu_list_row">
+					<li class="mobile-view"><a href="/"><span>Home</span></a></li>
+					<li page="about-us"><a href="about-us"><span>About Us</span></a></li>
+					<li page="services"><a href="services"><span>Services</span></a></li>
+					<li page="knowledge-centre" class="active"><a href="knowledge-centre"><span>Knowledge Centre</span></a></li>
+					<li page="testimonials"><a href="testimonials"><span>Testimonials</span></a></li>
+					<li page="contact-us"><a href="contact-us"><span>Location</span></a></li>
+					{{#if currentBu.businessUnit.ClientLogin}}
+					<li><a href="{{currentBu.businessUnit.ClientLogin}}"><span>Client Login</span></a></li>
+					{{/if}}
+					<ul class="mobile-tabs footer-tab-links mobile-view">
+  					<li class="mobile-tab-link" mobile-data-tab="mobile-tab-2"><span>book an appointment</span></li>
+  					<li class="mobile-tab-link" mobile-data-tab="mobile-tab-4"><span>email</span></li>
+  					<li class="mobile-tab-link" mobile-data-tab="mobile-tab-3"><span>LET&#x2019;S CHAT</span></li>
+  					<li class="mobile-tab-link" mobile-data-tab="mobile-tab-1"><span>CALL US</span></li>
+  				</ul>
+					<li class="request-call desktop-view" page="contact-us"><a href="contact-us">Get In Touch</a></li>
+				</ul>
+			</div>			
+		</nav>
+	</div>
+</header>
+
+  <div class="get-in-tough mobile-view ">
+		<a href="contact-us" page="contact-us" class="get-in-tough-link">Get In Touch</a>
+	</div>
+
+
+<section class="main-banner">
+	<div class="container">
+		<div class="article-banner-featured-img" id="article_banner_featured_img_5" edit-container="article-banner-featured-img-5">
+			<img src="https://s3-eu-west-1.amazonaws.com/studio.gf.staging/tal/tal-au/assets/images/article-featured-banner-img-5.jpg" id="our-team-featured-img-5" alt="article-banner"> 
+		</div>
+	</div>
+	
+	<div class="container">
+		<div class="knowledge-centre-artical-box" id="knowledge-centre-artical-box-5" edit-container="knowledge-centre-artical-box-5">
+			<h1>The Australian property market dilemma: to rent or buy? </h1>
+			<p><strong>With the high cost of property in Australia, should you be renting or buying?</strong></p>
+			<p>The dilemma is one that is faced by many - in Australia&#x2019;s tough property market and uncertain growth rates, is it better to buy or rent? While buying a property has always been the quintessential Australian dream, ultimately, it comes down to what is more financially viable for your individual circumstances. But what are the advantages and disadvantages of both alternatives?</p>
+
+			<p class="uprcase">The pros and cons of buying</p>
+			<p>By far, one of the biggest advantages of buying your property is the security it brings. Also, along with any aesthetic benefits, such as being able to renovate and decorate as you wish, there are financial advantages. </p>
+      <p>Purchasing a property is a valuable investment. Over time, through your mortgage repayments, you build equity in your property on top of any growth. In addition, while inflation can cause the cost of living to rise, minimal interest rate changes may mean your mortgage repayments remain around the same level, providing a stable housing cost that lets you anticipate your budget. </p>
+      <p>Of course, there are cons too. Purchasing a home requires a lot of discipline and money, especially saving for a deposit and obtaining a loan. There are risks involved and loads of responsibility, including the possibility of taking on too high a loan. In addition, all the maintenance and repairs need to be covered by you and your ability to move when required or desired is subject to selling and purchasing a new home. Finally, the sale depends on market conditions and while property is a valuable investment, the market is subject to economic conditions, meaning it can be a financial risk, especially if you need to sell during a downturn. </p>
+    
+      <p class="uprcase">The pros and cons of renting</p>
+      <p>For many, renting is a much more appealing alternative. It&#x2019;s usually cheaper and less complicated than purchasing a home and it allows for greater flexibility if you ever need to move. On top of this, the owner will usually pay for any maintenance and repairs required. In terms of lifestyle, renting is often a way to live where you want as opposed to being dictated by where you can afford to buy. </p>
+      <p>When it comes to financial advantages, renters have a much lower initial outlay and ongoing costs tend to be cheaper. Renting also opens up doors to alternative investment options as you&#x2019;re not locked into the property market. </p>
+      <p>However, renting means you have no equity opportunities and no ability to renovate or do anything that can change the home. There&#x2019;s also less security as your lease may not be renewed, your rent may increase and you may be evicted if there is ever a problem. On top of this, each time you move, expenses rack up. </p>
+            
+      <p class="uprcase">Get in touch</p>
+			<p>If purchasing your own property is your ultimate dream, it&#x2019;s imperative that you have a savings and financial management plan. Let us help you out.</p>
+			
+			<div class="backto-knowledge-centre"><a class="back-link" href="knowledge-centre">KNOWLEDGE CENTRE</a></div>
+			
+		</div>
+	</div>
+	
+</section>
+
+
+
+
+<div class="mobile-tabing-box mobile-view">
+
+	<div class="job-info-box">
+		<div class="user-featured-img"> <img src="{{websiteMainUser.imageUrl}}" alt="user-img"></div>
+			<div class="user-details">
+				<p> {{currentBu.businessUnit.displayName}} </p>
+			</div>
+	</div>
+							
+	<ul class="mobile-tabs">
+		<li class="mobile-tab-link" mobile-data-tab="mobile-tab-1"><svg class="svg-icon-phone" width="35px" height="35px" viewbox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+			<g id="Asset-Artboard-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+				<g id="Circle" transform="translate(-89.000000, -187.000000)" fill="#FFFFFF" fill-rule="nonzero">
+					<g id="Group-9">
+						<g id="Oval-Copy-5" transform="translate(75.000000, 173.000000)">
+							<g id="phone-call-(1)" transform="translate(14.000000, 14.000000)">
+								<path d="M22.9390142,16.9430148 C22.3447964,16.3242932 21.6280594,15.9934915 20.8684407,15.9934915 C20.114948,15.9934915 19.392085,16.3181672 18.7733633,16.9368889 L16.8375609,18.8665654 C16.678286,18.780802 16.5190111,18.7011646 16.3658622,18.6215271 C16.1453277,18.5112599 15.9370452,18.4071186 15.7593924,18.2968514 C13.9461091,17.1451714 12.2982266,15.6443119 10.7177296,13.7023835 C9.951985,12.7344823 9.43740459,11.91973 9.06372121,11.0927257 C9.5660497,10.6332789 10.0316224,10.1554543 10.4849433,9.6960075 C10.6564701,9.5244807 10.8279969,9.34682794 10.9995237,9.17530114 C12.2859747,7.88885013 12.2859747,6.22258978 10.9995237,4.93613877 L9.32713737,3.26375246 C9.13723269,3.07384779 8.94120206,2.87781716 8.75742335,2.68178653 C8.38986592,2.30197718 8.00393061,1.90991592 7.6057434,1.54235849 C7.01152555,0.954266604 6.30091452,0.641842788 5.55354774,0.641842788 C4.80618097,0.641842788 4.08331802,0.954266604 3.4707223,1.54235849 C3.46459634,1.54848445 3.46459634,1.54848445 3.45847039,1.55461041 L1.37564494,3.65581372 C0.591522425,4.43993624 0.144327551,5.39558556 0.0463122363,6.50438381 C-0.100710736,8.29316331 0.426121581,9.95942366 0.830434755,11.049844 C1.82283982,13.7268873 3.30532146,16.2079 5.516792,18.8665654 C8.19996124,22.070441 11.4283407,24.6004613 15.1161669,26.3831149 C16.5251371,27.0508442 18.4058059,27.8410927 20.5070092,27.9758637 C20.6356543,27.9819897 20.7704254,27.9881156 20.8929445,27.9881156 C22.3080406,27.9881156 23.4964763,27.4796612 24.4276218,26.4688783 C24.4337478,26.4566263 24.4459997,26.4505004 24.4521256,26.4382485 C24.7706754,26.0523132 25.1382328,25.7031336 25.5241682,25.3294502 C25.7875843,25.078286 26.0571264,24.8148698 26.3205426,24.5392018 C26.9270123,23.9082282 27.2455621,23.1731133 27.2455621,22.4196206 C27.2455621,21.6600019 26.9208864,20.931013 26.3021647,20.3184173 L22.9390142,16.9430148 Z M25.1321069,23.3936478 C25.1259809,23.3936478 25.1259809,23.3997737 25.1321069,23.3936478 C24.8931946,23.650938 24.6481563,23.8837243 24.3847401,24.1410145 C23.9865529,24.5208239 23.5822397,24.9190111 23.2024304,25.366206 C22.5837087,26.0278093 21.8547198,26.3402332 20.8990705,26.3402332 C20.8071811,26.3402332 20.7091658,26.3402332 20.6172764,26.3341072 C18.7978672,26.217714 17.107103,25.507103 15.8390298,24.9006332 C12.3717381,23.222121 9.32713737,20.8391236 6.79711705,17.8190267 C4.70816565,15.3012583 3.31144741,12.9733946 2.38642788,10.4740041 C1.81671386,8.94864073 1.60843132,7.76020503 1.70032068,6.63915487 C1.76158025,5.92241788 2.03724832,5.32820003 2.54570277,4.81974559 L4.63465416,2.73079419 C4.93482607,2.44900016 5.25337584,2.29585123 5.56579966,2.29585123 C5.95173496,2.29585123 6.26415877,2.5286376 6.4601894,2.72466823 C6.46631536,2.73079419 6.47244132,2.73692014 6.47856728,2.7430461 C6.85225066,3.09222566 7.20755618,3.45365713 7.58123957,3.83959244 C7.77114424,4.03562307 7.96717487,4.2316537 8.1632055,4.43381028 L9.83559181,6.10619659 C10.4849433,6.75554805 10.4849433,7.35589186 9.83559181,8.00524332 C9.65793905,8.18289608 9.48641225,8.36054884 9.30875949,8.53207564 C8.79417909,9.05890795 8.30410252,9.54898453 7.77114424,10.0268092 C7.75889233,10.0390611 7.74664041,10.0451871 7.74051446,10.057439 C7.21368214,10.5842713 7.31169745,11.0988517 7.42196468,11.4480313 C7.42809064,11.4664091 7.4342166,11.484787 7.44034255,11.5031649 C7.87528551,12.5568295 8.48788123,13.5492346 9.41902672,14.7315443 L9.42515268,14.7376703 C11.1159169,16.8204957 12.8985704,18.4438744 14.8650027,19.6874437 C15.1161669,19.8467185 15.3734571,19.9753637 15.6184954,20.0978828 C15.8390298,20.20815 16.0473124,20.3122913 16.2249652,20.4225585 C16.249469,20.4348104 16.2739728,20.4531883 16.2984766,20.4654402 C16.5067592,20.5695815 16.7027898,20.6185892 16.9049464,20.6185892 C17.4134008,20.6185892 17.7319506,20.3000394 17.8360919,20.1958981 L19.9311692,18.1008208 C20.1394518,17.8925382 20.4702535,17.641374 20.8561888,17.641374 C21.2359981,17.641374 21.5484219,17.8802863 21.7383266,18.0885688 C21.7444526,18.0946948 21.7444526,18.0946948 21.7505785,18.1008208 L25.1259809,21.4762232 C25.7569545,22.1010708 25.7569545,22.7442963 25.1321069,23.3936478 Z" id="Shape"/>
+							</g>
+						</g>
+					</g>
+				</g>
+			</g>
+		</svg></li>
+		<li class="mobile-tab-link" mobile-data-tab="mobile-tab-2"> <svg class="svg-icon-calender" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewbox="0 0 36 36">
+		<g fill="#FFF" fill-rule="evenodd" transform="translate(.047 .056)">
+			<path fill-rule="nonzero" d="M32.90625,3.365625 L28.05,3.365625 L28.05,1.125 C28.05,0.50625 27.54375,-9.23705556e-14 26.925,-9.23705556e-14 C26.30625,-9.23705556e-14 25.8,0.50625 25.8,1.125 L25.8,3.365625 L19.078125,3.365625 L19.078125,1.125 C19.078125,0.50625 18.58125,-9.23705556e-14 17.953125,-9.23705556e-14 C17.334375,-9.23705556e-14 16.828125,0.50625 16.828125,1.125 L16.828125,3.365625 L10.096875,3.365625 L10.096875,1.125 C10.096875,0.50625 9.590625,-9.23705556e-14 8.971875,-9.23705556e-14 C8.353125,-9.23705556e-14 7.846875,0.50625 7.846875,1.125 L7.846875,3.365625 L2.990625,3.365625 C1.340625,3.365625 7.10542736e-15,4.70625 7.10542736e-15,6.35625 L7.10542736e-15,32.896875 C7.10542736e-15,34.546875 1.340625,35.8875 2.990625,35.8875 L32.896875,35.8875 C34.546875,35.8875 35.8875489,34.546875 35.8875489,32.896875 L35.8875489,6.35625 C35.896875,4.70625 34.55625,3.365625 32.90625,3.365625 Z M33.646875,32.896875 C33.646875,33.309375 33.309375,33.646875 32.896875,33.646875 L2.990625,33.646875 C2.578125,33.646875 2.240625,33.309375 2.240625,32.896875 L2.240625,6.35625 C2.240625,5.94375 2.578125,5.60625 2.990625,5.60625 L7.846875,5.60625 L7.846875,7.846875 C7.846875,8.465625 8.34375,8.971875 8.971875,8.971875 C9.590625,8.971875 10.096875,8.475 10.096875,7.846875 L10.096875,5.60625 L16.828125,5.60625 L16.828125,7.846875 C16.828125,8.465625 17.334375,8.971875 17.953125,8.971875 C18.571875,8.971875 19.078125,8.475 19.078125,7.846875 L19.078125,5.60625 L25.809375,5.60625 L25.809375,7.846875 C25.809375,8.465625 26.30625,8.971875 26.934375,8.971875 C27.553125,8.971875 28.059375,8.475 28.059375,7.846875 L28.059375,5.60625 L32.915625,5.60625 C33.328125,5.60625 33.665625,5.94375 33.665625,6.35625 L33.665625,32.896875 L33.646875,32.896875 Z"/>
+			<rect width="4.481" height="3.366" x="7.866" y="13.463"/>
+			<rect width="4.481" height="3.366" x="7.866" y="19.069"/>
+			<rect width="4.481" height="3.366" x="7.866" y="24.675"/>
+			<rect width="4.481" height="3.366" x="15.713" y="24.675"/>
+			<rect width="4.481" height="3.366" x="15.713" y="19.069"/>
+			<rect width="4.481" height="3.366" x="15.713" y="13.463"/>
+			<rect width="4.481" height="3.366" x="23.559" y="24.675"/>
+			<rect width="4.481" height="3.366" x="23.559" y="19.069"/>
+			<rect width="4.481" height="3.366" x="23.559" y="13.463"/>
+		  </g>
+		</svg></li>
+		<li class="mobile-tab-link" mobile-data-tab="mobile-tab-3"><svg class="svg-icon-chat" width="35px" height="35px" viewbox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+			<g id="Asset-Artboard-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+				<g id="Circle" transform="translate(-147.000000, -168.000000)" fill="#FFFFFF" fill-rule="nonzero">
+					<g id="Group-9">
+						<g id="Group-20" transform="translate(133.000000, 154.000000)">
+							<g id="Group-19">
+								<path d="M42,27.6394222 C42,35.1723556 35.8465333,41.2788444 28.2544889,41.2788444 C25.8443111,41.2788444 23.5800444,40.6628444 21.6100889,39.5817333 L14,42 L16.4811111,34.6820444 C15.2295111,32.6268444 14.5086667,30.2163556 14.5086667,27.6394222 C14.5086667,20.1064889 20.6627556,14 28.2544889,14 C35.8471556,14 42,20.1064889 42,27.6394222 Z M28.2544889,16.1721778 C21.8816889,16.1721778 16.6979556,21.3164 16.6979556,27.6394222 C16.6979556,30.1485333 17.5158667,32.4722222 18.8993778,34.3625333 L17.4555111,38.6213333 L21.8966222,37.2098222 C23.7212889,38.4079111 25.9071556,39.1066667 28.2548,39.1066667 C34.6266667,39.1066667 39.8113333,33.9630667 39.8113333,27.6400444 C39.8113333,21.3170222 34.6269778,16.1721778 28.2544889,16.1721778 Z" id="WhatsApp"/>
+							</g>
+						</g>
+					</g>
+				</g>
+			</g>
+		</svg></li>
+		<li class="mobile-tab-link" mobile-data-tab="mobile-tab-4"><svg class="svg-icon-email" width="35px" height="35px" viewbox="0 0 28 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+			<g id="Asset-Artboard-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+				<g id="Circle" transform="translate(-182.000000, -119.000000)" fill="#FFFFFF" fill-rule="nonzero">
+					<g id="Group-9">
+						<g id="Group-18" transform="translate(168.000000, 102.000000)">
+							<g id="mail" transform="translate(14.000000, 17.000000)">
+								<path d="M25.375,0 L2.625,0 C1.17535403,0 0,1.34326175 0,3 L0,19 C0,20.6567383 1.17535403,22 2.625,22 L25.375,22 C26.824646,22 28,20.6567383 28,19 L28,3 C28,1.34326175 26.824646,0 25.375,0 Z M24.2427979,2 L14,9.80004881 L3.75720215,2 L24.2427979,2 Z M1.75,18.5859375 L1.75,3 C1.75469973,2.9626465 1.7611084,2.92553712 1.76922605,2.888916 L10.0003357,9.15698244 L1.75,18.5859375 Z M2.98730469,20 L11.486084,10.2868652 L13.5144348,11.8320312 C13.8083801,12.0561524 14.1916199,12.0561524 14.4855652,11.8320312 L16.513916,10.2868652 L25.0126953,20 L2.98730469,20 Z M26.25,18.5859375 L17.9996643,9.15698244 L26.230774,2.888916 C26.2388916,2.92553712 26.2453003,2.9626465 26.25,3 L26.25,18.5859375 Z" id="Shape"/>
+							</g>
+						</g>
+					</g>
+				</g>
+			</g>
+		</svg></li>
+	</ul>
+
+	<div id="mobile-tab-1" class="mobile-tab-content">
+			<div class="mobile-close-icon">
+				<span></span>
+				<span></span>
+			</div>
+		<h5 class="give-a-call"> Give us a call </h5>
+		<p> <a href="tel:{{currentBu.businessUnit.workPhone.fullNumber}}" class="call-me"> {{currentBu.businessUnit.workPhone.fullNumber}}</a> </p>
+	</div>
+	<div id="mobile-tab-2" class="mobile-tab-content">
+		<div class="mobile-close-icon">
+				<span></span>
+				<span></span>
+			</div>
+		<div class="meet-form mobileMeetingForm">
+		<h5 class="live-chat"> Request a Meeting </h5>
+		<p class="note-preferred-date"> Note preferred date and time and we&#x2019;ll be in touch to confirm </p>
+			<form method="post" class="form" autocomplete="off">
+				<div class="form-row">
+					<input type="text" class="mfirst_name" name="mfirst_name" id="mfirst_name" placeholder="First Name*" value>
+				</div>
+				<div class="form-row">
+					<input type="text" class="mlast_name" name="mlast_name" id="mlast_name" placeholder="Last Name*" value>
+				</div>	
+
+				<div class="form-row">
+					<input type="text" class="mmeeting_date" name="date" id="mdatepicker" placeholder="Date" value>
+				</div>
+				
+				<div class="form-row">
+					<select class="selectpicker mmeeting_time" id="mtimemobile" tabindex="-98">
+						<option>Time</option>
+						<option>09:00-12:00</option>
+						<option>12:00-15:00</option>
+						<option>15:00-18:00</option>
+					</select>
+				</div>
+				
+				<div class="form-row">
+					<input type="email" class="memail" name="email" id="memail" placeholder="Your email" value>
+				</div>										
+				
+				<div class="form-row">
+					<div class="form-group">
+						<select id="countryCode" class="mcountryCode form-control">
+							<option value="AU" name="Australia">+61</option>
+							<option value="IN" name="India">+91</option>
+              <option value="CH" name="Switzerland">+41</option>
+              <option value="US" name="United States">+1</option>
+              <option value="RU" name="Russia">+7</option>
+              <option value="EG" name="Egypt">+20</option>
+              <option value="ZA" name="South Africa">+27</option>
+              <option value="GR" name="Greece">+30</option>
+              <option value="BE" name="Belgium">+32</option>
+              <option value="FR" name="France">+33</option>
+              <option value="ES" name="Spain">+34</option>
+              <option value="HU" name="Hungary">+36</option>
+              <option value="IT" name="Italy">+39</option>
+              <option value="RO" name="Romania">+40</option>
+              <option value="AT" name="Austria">+43</option>
+              <option value="GB" name="United Kingdom">+44</option>
+              <option value="DK" name="Denmark">+45</option>
+              <option value="NO" name="Norway">+47</option>
+              <option value="PL" name="Poland">+48</option>
+              <option value="DE" name="Germany">+49</option>
+              <option value="PE" name="Peru">+51</option>
+              <option value="MX" name="Mexico">+52</option>
+              <option value="AR" name="Argentina">+54</option>
+              <option value="BR" name="Brazil">+55</option>
+              <option value="VE" name="Venezuela">+58</option>
+              <option value="PH" name="Philippines">+63</option>
+              <option value="NZ" name="New Zealand">+64</option>
+              <option value="SG" name="Singapore">+65</option>
+              <option value="JP" name="Japan">+81</option>
+              <option value="VN" name="Vietnam">+84</option>
+              <option value="CN" name="China">+86</option>
+              <option value="PK" name="pakistan">+92</option>
+              <option value="MA" name="Morocco">+212</option>
+              <option value="TN" name="Tunisia">+216</option>
+              <option value="BF" name="Burkina Faso">+226</option>
+              <option value="BJ" name="Benin">+229</option>
+              <option value="GQ" name="Equatorial Guinea">+240</option>
+              <option value="GW" name="guinea-bissau">+245</option>
+              <option value="RW" name="Rwanda">+250</option>
+              <option value="ET" name="Ethiopia">+251</option>
+              <option value="BI" name="Burundi">+257</option>
+              <option value="RE" name="Reunion">+262</option>
+              <option value="MW" name="Malawi">+265</option>
+              <option value="BW" name="Botswana">+267</option>
+              <option value="SZ" name="Swaziland">+268</option>
+              <option value="GL" name="Greenland">+299</option>
+              <option value="PT" name="Portugal">+351</option>
+              <option value="LU" name="Luxembourg">+352</option>
+              <option value="IS" name="Iceland">+354</option>
+              <option value="MT" name="Malta">+356</option>
+              <option value="CY" name="Cyprus">+357</option>
+              <option value="FI" name="Finland">+358</option>
+              <option value="BG" name="Bulgaria">+359</option>
+              <option value="EE" name="Estonia">+372</option>
+              <option value="MD" name="Moldova">+373</option>
+              <option value="BY" name="Belarus">+375</option>
+              <option value="MC" name="Monaco">+377</option>
+              <option value="VA" name="Vatican">+379</option>
+              <option value="UA" name="Ukraine">+380</option>
+              <option value="RS" name="Serbia">+381</option>
+              <option value="ME" name="Montenegro">+382</option>
+              <option value="HR" name="Croatia">+385</option>
+              <option value="SB" name="Solomon Islands">+677</option>
+              <option value="SI" name="Slovenia">+386</option>
+              <option value="BA" name="Bosnia and Herzegovina">+387</option>
+              <option value="CZ" name="Czech Republic">+420</option>
+              <option value="SK" name="Slovakia">+421</option>
+              <option value="LI" name="Liechtenstein">+423</option>
+              <option value="BZ" name="Belize">+501</option>
+              <option value="GT" name="Guatemala">+502</option>
+              <option value="HN" name="Honduras">+504</option>
+              <option value="PA" name="Panama">+507</option>
+              <option value="BL" name="Saint Barthelemy">+590</option>
+              <option value="BO" name="Bolivia">+591</option>
+              <option value="PY" name="Paraguay">+595</option>
+              <option value="UY" name="Uruguay">+598</option>
+              <option value="BQ" name="bonaire, saint eustatius and saba ">+599</option>
+              <option value="TL" name="East Timor">+670</option>
+              <option value="BN" name="Brunei">+673</option>
+              <option value="PG" name="Papua New Guinea">+675</option>
+              <option value="WF" name="Wallis and Futuna">+681</option>
+              <option value="WS" name="Samoa">+685</option>
+              <option value="MH" name="Marshall Islands">+692</option>
+              <option value="HK" name="Hong Kong">+852</option>
+              <option value="BD" name="Bangladesh">+880</option>
+              <option value="TW" name="Taiwan">+886</option>
+              <option value="JO" name="Jordan">+962</option>
+              <option value="IQ" name="Iraq">+964</option>
+              <option value="SA" name="Saudi Arabia">+966</option>
+              <option value="PS" name="Palestinian Territory">+970</option>
+              <option value="IL" name="Israel">+972</option>
+              <option value="BH" name="Bahrain">+973</option>
+              <option value="QA" name="Qatar">+974</option>
+              <option value="BT" name="Bhutan">+975</option>
+              <option value="TJ" name="Tajikistan">+992</option>
+              <option value="TM" name="turkmenistan">+993</option>
+              <option value="GE" name="Georgia">+995</option>
+              <option value="BS" name="Bahamas">+1-242</option>
+              <option value="BB" name="Barbados">+1-246</option>
+              <option value="BM" name="Bermuda">+1-441</option>
+              <option value="GU" name="Guam">+1-671</option>
+              <option value="PR" name="Puerto Rico">+1-787</option>
+              <option value="JM" name="Jamaica">+1-876</option>
+						</select>
+						<span><input type="tel" id="mphone" placeholder="Your Phone*" required class="form-control meeting_input mphone"></span>
+					</div>
+				</div>
+				
+				<div class="form-row">
+					<p class="preferred"> Preferred contact method: </p>
+				</div>
+				
+				<div class="form-row">
+					<ul class="email-phone" id="memail_phone">
+						<li class="active"> Phone </li>
+						<li> Email </li>
+					</ul>
+				</div>
+				
+				<div class="start-chat-box">
+					<a href="javascript:void(0)" id="mobileMeetingFormsubmit" class="start-chat"> Request a Meeting </a> 
+				</div>
+				
+			</form>
+		</div>
+		
+		<div class="mobileMeetingThankpupup">
+			<div class="block-image-thank">
+				<img class="image-thank" src="https://s3-eu-west-1.amazonaws.com/studio.gf.staging/tal/tal-au/assets/images/thank-you-icon.svg" alt="thank you icon">
+			</div>
+			
+			<p class="thank-title">Thanks for contacting Aaron!</p>
+			<p class="thank-shedule">Friday 2020-01-31 09:00-12:00</p>
+			<p class="thank-text">We&#x2019;ll be in touch soon to confirm all the details</p>
+		</div>
+
+	</div>
+	<div id="mobile-tab-3" class="mobile-tab-content">
+		<div class="mobile-close-icon">
+				<span></span>
+				<span></span>
+			</div>
+		<h5 class="live-chat"> Live chat </h5>
+		<p>Hi, I am unavailable at the moment, please leave your email or phone number and I will get back to you shortly. </p>
+	</div>
+	<div id="mobile-tab-4" class="mobile-tab-content">
+		<div class="mobile-close-icon">
+				<span></span>
+				<span></span>
+			</div>
+		<h5 class="live-chat"> Email </h5>
+		<div class="start-chat-box other-box">
+			<a href="mailto:{{websiteMainUser.mainEmail}}" class="start-chat"> Email Me </a>
+		</div>
+	</div>
+
+</div>				
+<!-- mobile tab end -->
+
+
+</div>
+
+
+
+<footer id="footer">
+	<div class="container">
+
+      <div class="footer-row">
+	  
+        <div class="our-office">
+			<div class="footer-content-box-content">
+			  <h6 class="regional-financial"> {{currentBu.businessUnit.displayName}} </h6>
+				<h6>HEAD OFFICE</h6>
+				<p> {{currentBu.businessUnit.address}} </p>
+				<ul class="telephone-and-mobile">
+				{{#if currentBu.businessUnit.workPhone.fullNumber}}
+					<li>Telephone: <a href="tel:{{currentBu.businessUnit.workPhone.fullNumber}}"><span>{{currentBu.businessUnit.workPhone.fullNumber}}</span></a></li>
+				{{/if}}
+				{{#if currentBu.businessUnit.mobilePhone}}
+					<li>Mobile: <a href="tel:{{currentBu.businessUnit.mobilePhone}}"><span>{{currentBu.businessUnit.mobilePhone}}</span></a></li>
+				{{/if}}
+				</ul>
+      </div>
+			<div class="other-office-box">
+				<h6 class="other-office"> <a href="contact-us" page="contact-us"> OTHER OFFICES </a> </h6>
+				<div edit-container="footer-address"> <p> AARON DOWNEY B. Comm (Acc) Adv Dip FP Principal | Financial Adviser Authorised Representative No. 268816 PlanRight Financial Services Pty Ltd ABN 88 607 059 585 Corporate Authorised Representative &#xA0;(No.1242808) of Sentry Advice Pty Ltd ABN 77 103 642 888 | AFSL No 227748 Level 1, 190 Stirling Street Perth WA 6000. </p>	</div>
+            </div>
+        </div>
+		
+        <div class="quick-list-box-row">
+          <div class="quick-list">
+            <ul>
+              <li> <a href="privacy-policy" page="privacy-policy" target="_blank">Privacy Policy</a> </li>
+              <li> <a href="terms-and-conditions" page="terms-and-conditions" target="_blank">Terms &amp; Conditions</a> </li>
+              {{#if documents}}<li id="financial-services-guide">  </li>{{/if}}
+            </ul>
+          </div>
+		  <div class="regional-financial-planing">
+				<div edit-container="regional-financial-planning"> <p> Regional Financial Planning and Advice Pty Ltd trading as RFPlan is a corporate authorised representative 408947 of Elders Financial Planning Pty Ltd ABN 48 007 997186 AFSL 224645 </p> </div>	
+            </div>
+        </div>
+
+      </div>
+
+	</div>
+	
+	<div class="footer-copy-right">
+		<div class="container">
+			<div class="copyright-row">
+				<ul class="social-links">
+					{{#if currentBu.businessUnit.facebookAddress}}<li class="tabs-icon tabs-icon-1"> <a href="{{currentBu.businessUnit.facebookAddress}}" target="_blank"> <svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewbox="0 0 37 37">
+					  <g fill="none" fill-rule="evenodd">
+						<circle cx="18.49" cy="18.49" r="17.491" stroke="#FFF" stroke-width="1.999"/>
+						<path fill="#FFF" d="M19.5070708,25.6810689 L19.5070708,18.4895276 L21.3304595,18.4895276 L21.5720979,16.0112827 L19.5070708,16.0112827 L19.5101687,14.7708972 C19.5101687,14.1245328 19.5665768,13.7781959 20.4192815,13.7781959 L21.5591898,13.7781959 L21.5591898,11.2996703 L19.735543,11.2996703 C17.5450498,11.2996703 16.774053,12.5018857 16.774053,14.523634 L16.774053,16.0115633 L15.4086413,16.0115633 L15.4086413,18.4898083 L16.774053,18.4898083 L16.774053,25.6810689 L19.5070708,25.6810689 Z"/>
+					  </g>
+					</svg> </a> </li>{{/if}}
+					{{#if currentBu.businessUnit.linkedinAddress}}<li class="tabs-icon tabs-icon-2"> <a href="{{currentBu.businessUnit.linkedinAddress}}" target="_blank"> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="37" height="37" version="1.1"><rect id="backgroundrect" width="100%" height="100%" x="0" y="0" fill="none" stroke="none"/>
+<g class="currentLayer" style=""><title>Layer 1</title><g id="surface1" class="selected" fill="#ffffff" fill-opacity="1">
+<path style="stroke: none; fill-rule: evenodd;" d="M 18.5 37 C 28.71875 37 37 28.71875 37 18.5 C 37 8.28125 28.71875 0 18.5 0 C 8.28125 0 0 8.28125 0 18.5 C 0 28.71875 8.28125 37 18.5 37 Z M 18.5 34.78125 C 27.492188 34.78125 34.78125 27.492188 34.78125 18.5 C 34.78125 9.507812 27.492188 2.21875 18.5 2.21875 C 9.507812 2.21875 2.21875 9.507812 2.21875 18.5 C 2.21875 27.492188 9.507812 34.78125 18.5 34.78125 Z M 10.359375 14.886719 L 10.359375 25.648438 L 13.84375 25.648438 L 13.84375 14.886719 Z M 12.332031 9.621094 C 11.140625 9.621094 10.359375 10.421875 10.359375 11.480469 C 10.359375 12.511719 11.117188 13.339844 12.285156 13.339844 L 12.308594 13.339844 C 13.523438 13.339844 14.28125 12.511719 14.28125 11.480469 C 14.257812 10.421875 13.523438 9.621094 12.332031 9.621094 Z M 22.625 14.886719 C 20.777344 14.886719 19.949219 15.933594 19.484375 16.664062 L 19.484375 15.140625 L 16 15.140625 C 16.046875 16.148438 16 25.898438 16 25.898438 L 19.484375 25.898438 L 19.484375 19.890625 C 19.484375 19.570312 19.507812 19.25 19.601562 19.019531 C 19.851562 18.375 20.425781 17.710938 21.386719 17.710938 C 22.648438 17.710938 23.15625 18.699219 23.15625 20.144531 L 23.15625 25.898438 L 26.640625 25.898438 L 26.640625 19.730469 C 26.640625 16.425781 24.921875 14.886719 22.625 14.886719 Z M 22.625 14.886719 " id="svg_1" fill="#ffffff" fill-opacity="1"/>
+</g></g></svg> </a> </li>{{/if}}
+				</ul>
+				<div class="copyright-renouf"> <p> {{currentBu.businessUnit.websiteLegalFooter}} </p> </div>
+			</div>
+		</div>
+	</div>
+		
+</footer>
+
+
+ <!-- jQuery -->
+<script src="https://s3-eu-west-1.amazonaws.com/studio.gf.staging/tal/tal-au/assets/js/jquery.min.js" type="text/javascript"></script>
+	<script>
+    window.handelbarsDataPrivatObject = {
+       documentsFromBO : [ {{#each documents}} { name: "{{name}}", path: "{{path}}", },{{/each}} ],
+    };
+  </script>
+<script src="https://s3-eu-west-1.amazonaws.com/studio.gf.staging/tal/tal-au/assets/js/operate-document-from-bo.js" type="text/javascript"></script> 
+<script src="https://s3-eu-west-1.amazonaws.com/studio.gf.staging/tal/tal-au/assets/js/jquery-ui.js" type="text/javascript"></script>
+<script src="https://s3-eu-west-1.amazonaws.com/studio.gf.staging/tal/tal-au/assets/js/swiper.min.js" type="text/javascript"></script>
+<script src="https://s3-eu-west-1.amazonaws.com/studio.gf.staging/tal/tal-au/assets/js/jquery.nice-select.min.js"></script>
+<script src="https://s3-eu-west-1.amazonaws.com/studio.gf.staging/tal/tal-au/assets/js/css-vars-ponyfill.min.js" type="text/javascript"></script> 
+<script src="https://s3-eu-west-1.amazonaws.com/studio.gf.staging/tal/tal-au/assets/js/custom.js" type="text/javascript"></script>
+
+<script>
+if(/MSIE \d|Trident.*rv:/.test(navigator.userAgent)){
+    //-Fix for ie11 css variables
+    //-This fix must be below jQuery <script>
+    //-We load style file, find-replace all css variables with handlebars data
+    //-Then we create <style>, add this updated css and append it to head
+    jQuery.get("https://s3-eu-west-1.amazonaws.com/studio.gf.staging/tal/tal-au/assets/css/ie-style.css", function(response) {
+        var primarycolor1 = "{{#if businessUnitStyle.colorPalette.primary }}{{businessUnitStyle.colorPalette.primary }}{{else}}#ffffff{{/if}}"
+        var secondarycolor1 = "{{#if businessUnitStyle.colorPalette.accents.color1 }}{{ businessUnitStyle.colorPalette.accents.color1 }}{{else}}#0C7CB0{{/if}}"
+        var secondarycolor2 = "{{#if businessUnitStyle.colorPalette.accents.color2 }}{{ businessUnitStyle.colorPalette.accents.color2 }}{{else}}#08638E{{/if}}"
+        var secondarycolor3 = "{{#if businessUnitStyle.colorPalette.accents.color3 }}{{ businessUnitStyle.colorPalette.accents.color3 }}{{else}}#17bfbe{{/if}}"
+        var secondarycolor4 = "{{#if businessUnitStyle.colorPalette.accents.color4 }}{{ businessUnitStyle.colorPalette.accents.color4 }}{{else}}#ffffff{{/if}}"
+        var logourl = "url({{businessUnitStyle.logos.web}})"
+
+        var css = response;
+
+        css = css.replace(/var\(\-\-primary\-color\-1\)/gm, primarycolor1).replace(/var\(\-\-secondary\-color\-1\)/gm, secondarycolor1).replace(/var\(\-\-secondary\-color\-2\)/gm, secondarycolor2).replace(/var\(\-\-secondary\-color\-3\)/gm, secondarycolor3).replace(/var\(\-\-secondary\-color\-4\)/gm, secondarycolor4).replace(/var\(\-\-logo\-url\)/gm, logourl);
+
+        var head = document.head || document.getElementsByTagName('head')[0];
+        var style = document.createElement('style');
+        head.appendChild(style);
+        style.type = 'text/css';
+        style.appendChild(document.createTextNode(css));
+        console.log('style was appended in ie11 only')
+    });
+}
+
+
+</script>
+
+</body>
+</html>

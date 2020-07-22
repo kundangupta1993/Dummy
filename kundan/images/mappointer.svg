@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="62" height="88" viewBox="0 0 62 88">
+  <defs>
+    <path id="mappointer-b" d="M36.8993967,36.8994024 C34.2549436,39.5438519 30.7393029,41 27,41 C23.2603061,41 19.7446654,39.5438519 17.1002123,36.8994024 C14.4561502,34.255344 13,30.7397082 13,27.0000196 C13,23.2604091 14.4561502,19.7447733 17.1002123,17.1005194 C19.7446654,14.4562654 23.2603061,13 27,13 C30.7393029,13 34.2549436,14.4562654 36.8993967,17.1005194 C39.5434588,19.7447733 41,23.2604091 41,27.0000196 C41,30.7397082 39.5434588,34.255344 36.8993967,36.8994024 Z M27.0001967,0 C12.0882192,0 0,12.1825044 0,27.2104164 C0,49.24695 27.4695772,80 27.4695772,80 C27.4695772,80 54,49.4027791 54,27.2104164 C54,12.1825044 41.9117808,0 27.0001967,0 L27.0001967,0 Z"/>
+    <filter id="mappointer-a" width="125.9%" height="117.5%" x="-13%" y="-6.2%" filterUnits="objectBoundingBox">
+      <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(4 2)">
+    <use fill="#000" filter="url(#mappointer-a)" xlink:href="#mappointer-b"/>
+    <use fill="#FFD206" xlink:href="#mappointer-b"/>
+  </g>
+</svg>
