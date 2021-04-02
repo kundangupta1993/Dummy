@@ -1,0 +1,62 @@
+/*
+ Author: Ukieweb
+ Template: Tiles
+ Version: 1.3
+ URL: http://themeforest.net/user/UkieWeb
+ */
+
+
+$(document).ready(function() {
+
+    "use strict";
+
+    /*
+     ----------------------------------------------------------------------
+     Map
+     ----------------------------------------------------------------------
+     */
+    var map;
+
+    function initialize_map() {
+
+        if ($('#map').length) {
+            var myLatLng = new google.maps.LatLng(39.987686, -82.970916);
+            var mapOptions = {
+                zoom: 13,
+                center: myLatLng,
+                scrollwheel: false,
+                panControl: false,
+                zoomControl: true,
+                scaleControl: false,
+                mapTypeControl: false,
+                styles: [{"featureType":"landscape","stylers":[{"saturation":-100},{"lightness":65},{"visibility":"on"}]},{"featureType":"poi","stylers":[{"saturation":-100},{"lightness":51},{"visibility":"simplified"}]},{"featureType":"road.highway","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"road.arterial","stylers":[{"saturation":-100},{"lightness":30},{"visibility":"on"}]},{"featureType":"road.local","stylers":[{"saturation":-100},{"lightness":40},{"visibility":"on"}]},{"featureType":"transit","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"administrative.province","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":-25},{"saturation":-100}]},{"featureType":"water","elementType":"geometry","stylers":[{"hue":"#ffff00"},{"lightness":-25},{"saturation":-97}]}],
+                streetViewControl: false
+            };
+            map = new google.maps.Map(document.getElementById('map'), mapOptions);
+            var marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map,
+                title: 'UkieWeb',
+                icon: './assets/img/location.png'
+            });
+
+            var contentString = '<div class="map-popup">3412 Cranston<br />Dr,Dublin, OH 43017</div>';
+
+            var infowindow = new google.maps.InfoWindow({
+                content: contentString
+            });
+
+            google.maps.event.addListener(marker, 'click', function() {
+                //infowindow.setContent('test');
+                infowindow.open(map, marker);
+            });
+
+        } else {
+            return false;
+        }
+
+    }
+
+    google.maps.event.addDomListener(window, 'load', initialize_map);
+
+});

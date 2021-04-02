@@ -1,0 +1,273 @@
+section.testAutomation {
+  min-height: 100vh;
+  display: flex;
+  background-position: center;
+  align-items: center;
+  background-image: url(../../assets/images/automation-banner1.jpeg);
+  background-size: cover;
+}
+
+h2.automatinHeading {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+h2.QAHead {
+  color: #000;
+  font-size: 2.5rem;
+  margin: 2rem 0;
+}
+
+.buttonWhite:hover {
+  color: black !important;
+  font-weight: normal;
+}
+
+.smallCardWrap {
+  min-height: 230px;
+  background-image: url('../../assets/images/smallBanner.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  box-shadow: 0px 20px 20px -22px black;
+  margin-bottom: 15px;
+}
+
+.grid-view-wrapper {
+  text-align: right;
+  margin-top: 15px;
+}
+
+h3.smallCardHead,
+h3.cardHead {
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+h1.custom-heading-h1-banner {
+  color: white;
+  line-height: 1.5;
+}
+
+.smallCardTextWrap {
+  position: absolute;
+  bottom: 0;
+  background: #ffffffb8;
+  width: 100%;
+  text-align: left;
+  padding: 10px 20px;
+}
+
+.grid-view-wrapper a {
+  margin: 20px 5px;
+}
+
+p.smallCardText {
+  font-size: 13px;
+  color: #0c0c0c;
+  margin-bottom: 2%;
+}
+
+.cardWrap {
+  box-shadow: 6px 11px 20px -9px black;
+  background: white;
+}
+
+h3.banner-text-right {
+  font-size: 17px;
+  text-align: right;
+  font-weight: 300;
+  max-width: 70%;
+  margin-left: auto;
+  line-height: 1.8rem;
+}
+
+.knowMoreButton {
+  margin-top: 1rem;
+  text-align: right;
+  font-size: 12px;
+}
+
+.testingToolWrap {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  border: 1px solid #f2f2f2;
+}
+
+section.getAutomatedQuote {
+  background: black;
+  padding: 5rem 0;
+}
+
+img.testingtool {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 70%;
+  object-fit: cover;
+  height: auto;
+}
+
+.smallknowMoreButton {
+  text-align: right;
+}
+
+p.cardText {
+  font-size: 13px;
+  min-height: 130px;
+  color: #656565;
+}
+
+.smallknowMoreButton a {
+  margin-top: 1rem;
+  text-align: right;
+  font-size: 12px;
+}
+
+h3.cardHead {
+  color: black;
+  margin-bottom: 5px;
+}
+
+.cardTextWrap {
+  padding: 3rem 2rem 2rem 2rem;
+  text-align: left;
+}
+
+img.cardImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+p.QaPara {
+  font-size: 15px;
+}
+
+section.automatedQuote {
+  margin: 6rem 0;
+  text-align: center;
+}
+
+p.automationPara {
+  color: white;
+}
+
+.testAutomationCover {
+  max-width: 50%;
+
+}
+
+.qaHeadCover {
+  max-width: 75%;
+  margin: auto;
+  margin-bottom: 5rem;
+}
+
+span.count {
+  font-size: 3rem;
+}
+
+section.testAutomation.mobileTesting {
+  background-image: url(../../assets/images/banner2.jpeg);
+  background-attachment: fixed;
+}
+
+section.testAutomation.DigitalTransform {
+  background-image: url(../../assets/images/banner3.jpeg);
+}
+
+section.testAutomation.mobileTesting .testAutomationCover {
+  margin-left: auto;
+  text-align: right;
+}
+
+h2.custom-heading-h2-banner {
+  text-align: right;
+}
+
+@media only screen and (max-width:1025px) {
+
+  section.testAutomation {
+    min-height: 400px;
+  }
+
+  .cardTextWrap {
+    padding: 2rem 1rem 2rem 1rem;
+  }
+
+}
+
+@media only screen and (max-width:650px) {
+
+  .testAutomationCover {
+    max-width: 100%;
+  }
+
+  section.getAutomatedQuote {
+    padding: 2rem 0;
+  }
+
+  h2.automatinHeading {
+    font-size: 1.3rem;
+  }
+
+  .grid-view-wrapper {
+    text-align: left;
+  }
+
+  a.buttonDefault {
+    padding: 7px 20px;
+    font-size: 11px;
+  }
+
+  p.automationPara {
+    font-size: 12px;
+  }
+
+  h2.custom-heading-h2-banner {
+    font-size: 1.5rem;
+    text-align: left;
+  }
+
+  h2.QAHead {
+    font-size: 1.5rem;
+  }
+
+  p.QaPara {
+    font-size: 12px;
+  }
+
+  h1.custom-heading-h1-banner {
+    font-size: 1.5rem;
+  }
+
+  h3.banner-text-right {
+    text-align: left;
+    max-width: 100%;
+    font-size: 13px;
+  }
+
+  .qaHeadCover {
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  section.automatedQuote {
+    margin: 2rem 0;
+  }
+
+  section.subpage-banner,
+  .subpage-banner .banner-gradient {
+    height: auto !important;
+  }
+
+  .grid-view-wrapper a {
+    margin: 10px 0px;
+  }
+
+}

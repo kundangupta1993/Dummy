@@ -1,0 +1,26 @@
+[
+    {
+        "HomePageTitle": "Meta Title",
+        "HomePageMetaDescription": "Meta description",
+        "HomePageKeywords": "Home Page Key words",
+        "HomePageOgurl": "Home Page Og url",
+        "HomePageOgtitle": "Home Page Og Title",
+        "HomePageOgdescription": "Home Page Og description",
+        "HomePageOgimage": "Home Page Og image",
+        "HomePageTwitterurl": "Home Page Twitter url",
+        "HomePageTwittertitle": "Home Page Twitter title",
+        "HomePageTwitterdescription": "Home Page Twitter description",
+        "HomePageTwitterimage": "Home Page Twitter image",
+        "HomePageTobotscontent1": "Home Page Tobot scontent1",
+        "HomePageTobotscontent2": "Home Page Tobot scontent2",
+        "HomePageMainEntityOfPageid": "Home Page MainEntity OfPageid",
+        "HomePagejsonheadline": "Home Page json headline",
+        "HomePagejsondescription": "Home Page json description",
+        "HomePagejsonimage": "Home Page json image",
+        "HomePagejsonauthorName": "Home Page json author Name",
+        "HomePagejsonpublisherName": "Home Page json publisher Name",
+        "HomePagejsonpublisherUrl": "Home Page json publisher Url",
+        "HomePagejsonDatePublished": "Home Pagejson Date Published",
+        "HomePagejsonDateModified": "Home Pagejson DateModified"
+    }
+]

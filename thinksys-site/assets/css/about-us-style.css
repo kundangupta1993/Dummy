@@ -1,0 +1,187 @@
+/***************************************************
+           about us page css start
+*****************************************************/
+
+
+
+.section-2:before {
+  content: ""; 
+  background: aliceblue;
+  height: 360px;
+  width: 320px;
+  position: absolute;
+  left: -110px;
+  top: -110px;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.section-2 .awards img {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+.about-us-page-story__point {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  margin-right: 0;
+  padding-top: 0;
+  padding-left: 5.625rem;
+  padding-bottom: 3.5rem;
+}
+
+.about-us-page-story__point:before {
+  content: "";
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  top: .5rem;
+  left: 2.4375rem;
+  width: 1rem;
+  height: 1rem;
+  background-color: #fff;
+  border: .09375rem solid #000ee6;
+  border-radius: 100%;
+  z-index: 1;
+}
+
+.about-us-page-story__point:after {
+  content: "";
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  top: .5rem;
+  left: 2.875rem;
+  width: .125rem;
+  height: 100%;
+  background-color: #cccffa;
+}
+
+.about-us-page-story__point:last-child:after {
+  display: none;
+}
+/* .section-heading h2 {
+  font-size: 60px;
+  font-weight: bold;
+} */
+.section-3 h5 {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.section-3 h5:after {
+  content: "";
+  height: 2px;
+  width: 80px;
+  position: absolute;
+  top: 35px;
+  left: 0px;
+  background: #1d73bd;
+}
+
+.section-3 img {
+  background: #ecf1fd;
+  border-radius: 20px;
+}
+
+.section-4:after {
+  content: "";
+  position: absolute;
+  left: -360px;
+  top: 0px;
+  height: 100%;
+  width: 50%;
+  background: aliceblue;
+  z-index: -1;
+  border-radius: 300px;
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+}
+
+.section-4 h5 {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.section-4 h5:after {
+  content: "";
+  height: 2px;
+  width: 80px;
+  position: absolute;
+  top: 35px;
+  left: 0px;
+  background: #1d73bd;
+}
+
+.section-5 {
+  position: relative;
+}
+
+.section-5 .why-img {
+  background-image: url("https://i0.wp.com/www.thinksys.com/wp-content/uploads/2018/03/life-at-thinksys.jpg?fit=1600%2C430&ssl=1");
+  background-size: cover;
+  background-position: 50%;
+  height: 500px;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
+section.section-3 {
+  background-color: #ffffff;
+  background-image: url(https://www.transparenttextures.com/patterns/back-pattern.png);
+}
+.section-5:after {
+  content: "";
+  position: absolute;
+  right: -360px;
+  top: 0px;
+  height: 100%;
+  width: 50%;
+  background: aliceblue;
+  z-index: -1;
+  border-radius: 300px;
+  -webkit-transform: rotate(15deg);
+  transform: rotate(-15deg);
+}
+
+.section-5 h5 {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.section-5 h5:after {
+  content: "";
+  height: 2px;
+  width: 80px;
+  position: absolute;
+  top: 35px;
+  left: 0px;
+  background: #1d73bd;
+}
+
+@media only screen and (max-width: 1024px) {
+  .section-5 {
+    overflow-x: hidden;
+}
+}
+@media only screen and (max-width: 768px) {
+
+  .about-us-page-story__point:before {
+    left: 0.4375rem;
+  }
+  .about-us-page-story__point:after {
+    left: 0.875rem;
+  }
+  .about-us-page-story__point {
+    padding-left: 2.625rem;
+  }
+  /* .section-heading h2 {
+    font-size: 36px;
+  } */
+  .contact h2 {
+    font-size: 18px;
+  }
+}
+/***************************************************
+           about us page css end
+*****************************************************/

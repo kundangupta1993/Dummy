@@ -1,0 +1,287 @@
+.react-banner{
+  background: url(../../assets/images/react-development-services.png) center/cover no-repeat;
+  height: 500px;
+  position: relative;
+}
+.section-heading{
+  padding-top: 230px; 
+  color: #fff;
+}
+section.react-develop {
+margin-top: -50px;
+}
+.react-box{
+  height: 500px;
+  position: relative;
+  background: linear-gradient(129deg,#093e5f,#26abe2);
+  color: #fff;
+}
+.texture::before{
+content: "";
+background-image: url(../../assets/images/react-texture.png);
+display: block;
+height: 100%;
+opacity: .4;
+position: absolute;
+width: 100%;
+}
+a{
+color: #001090 !important;
+text-decoration: none;
+}
+a:hover{
+color: #001090 !important;
+text-decoration: none;
+}
+.react-difference{
+background-color: #fff;
+height: auto;
+margin-top: -50px;
+padding-bottom: 50px;
+box-shadow: 0 0 32px 0 rgba(0,0,0,.35);
+}
+ul.react-list-style {
+list-style: none;
+padding-left: 100px;
+margin: 0;
+}
+ul.react-list-style li {
+  position: relative;
+  margin-bottom: 5px;
+  padding-left: 20px;
+}
+ul.react-list-style li::before {
+  content: "";
+  /* background-image: url('../../assets/images/li-bullet.png'); */
+  height: 7px;
+  width: 7px;
+  background-size: 20px;
+  position: absolute;
+  left: 0;
+  top: 10px;
+  background-color: #27abe2;
+}
+.react-offerings{
+margin-bottom: 250px;
+}
+.react-wrapper{
+margin: 0 auto;
+  max-width: 1440px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.offerings-wrap{
+flex-wrap: wrap;
+} 
+.offering-circle{
+background-color: #fff;
+border-radius: 50%;
+-webkit-box-shadow: 0 0 32px 0 rgba(0,0,0,.35);
+box-shadow: 0 0 32px 0 rgba(0,0,0,.35);
+height: 150px;
+position: relative;
+width: 200px;
+align-items: center;
+}
+.offering-circle-img{
+top: 50%;
+left: 50%;
+position: relative;
+transform: translate(-50%, -50%);
+}
+.number-circle{
+  background: #fff;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 32px 0 rgba(0,0,0,.35);
+  box-shadow: 0 0 32px 0 rgba(0,0,0,.35);
+  height: 60px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(50%,-50%);
+  width: 60px;
+  font-family: sf_ui_displayheavy,sans-serif;
+  font-size: 30px;
+}
+.line {
+transform: rotate(-138deg);
+width: 170px;
+background-color: #d9d9d9;
+height: 2px;
+position: absolute;
+right: 0;
+transform-origin: right center;
+z-index: -1;
+}
+.react-offerings .offering-text {
+  flex-direction: column;
+}
+.react-offerings .offering {
+flex-basis: 50%;
+max-width: 50%;
+}
+.react-offerings .offering:first-child .number-circle {
+color: #373084;
+}
+.react-offerings .offering:nth-child(2) .number-circle {
+  color: #0d538a;
+}
+.react-offerings .offering:nth-child(3) .number-circle {
+  color: #00758b;
+}
+.react-offerings .offering:nth-child(4) .number-circle {
+  color: #018f8b;
+}
+.react-offerings .offering:nth-child(5) .number-circle {
+  color: #149f81;
+}
+.react-offerings .offering:nth-child(6) .number-circle {
+  color: #00878b;
+}
+.react-offerings .offering:nth-child(7) .number-circle {
+  color: #376984;
+}
+.react-offerings .offering:nth-child(2n) .offering-circle{
+margin-right: 20px;
+order: 0;
+}
+.react-offerings .offering:nth-child(2n-1) .offering-circle{
+order: 1;
+margin-left: 20px;
+}
+.react-offerings .offering:nth-child(2n - 1) .offering-text {
+text-align: right;
+}
+.react-offerings .offering:nth-child(2n) .offering-text {
+text-align: left;
+}
+.react-offerings .offering:nth-child(2n - 1) {
+padding-right:65px;
+}
+.react-offerings .offering:nth-child(2n) {
+padding-left: 65px;
+}
+.react-offerings .offering:nth-child(2n) .number-circle {
+left: 0;
+transform: translate(-50%,-50%);
+}
+.react-offerings .offering:nth-child(2n) .line {
+left: 0;
+transform: rotate(138deg);
+transform-origin: left center;
+}
+.react-offerings .offering:first-child{
+margin-bottom: 115px;
+}
+.react-offerings .offering:nth-child(2) {
+margin-top: 115px;
+}
+.react-offerings .offering:nth-child(3) {
+margin-bottom: 115px;
+margin-top: -29px;
+}
+.react-offerings .offering:nth-child(4) {
+margin-top: 86px;
+}
+.react-offerings .offering:nth-child(6) {
+margin-top: 86px;
+}
+.react-offerings .offering:nth-child(5) {
+margin-top: -29px;
+margin-bottom: 115px;
+}
+.react-offerings .offering:nth-child(7) {
+margin-top: -29px;
+}
+.reactjs-development{
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.reactjs-development-heading {
+  width: 30%;
+  height: 100px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 32px 0 rgb(0 0 0 / 35%);
+  box-shadow: 0 0 32px 0 rgb(0 0 0 / 35%);
+  z-index: 9;
+}
+.react-development-company{
+  background: url(../../assets/images/react-development-company.jpg) center/cover no-repeat;
+  height: 500px;
+  margin-top: -30px;
+  color: #fff;
+  background-position: 50% 0;
+    bottom: -1px;
+    left: -1px;
+    position: relative;
+    right: -1px;
+    top: -1px;
+    -webkit-transition: -webkit-transform 2.5s;
+    transition: -webkit-transform 2.5s;
+    -o-transition: transform 2.5s;
+    transition: transform 2.5s;
+    transition: transform 2.5s,-webkit-transform 2.5s;
+}
+.react-development-company-heading{
+  text-align: left;
+}
+.react-development-company:hover .react-development-company-heading,
+.myraid-react-services:hover .myraid-react-services-heading,
+.react-prized-asset:hover .react-prized-asset-heading{
+  text-decoration: underline;
+  -webkit-transition: .3s ease-out;
+  -o-transition: .3s ease-out;
+  transition: .5s ease-out;
+}
+.reactjs-development .react-development-company:hover, 
+.reactjs-development .myraid-react-services:hover, 
+.reactjs-development .react-prized-asset:hover{
+  -webkit-transform: scale(1.03) translateZ(0);
+  transform: scale(1.03) translateZ(0);
+}
+.myraid-react-services{
+    background: url(../../assets/images/myraid-react-services.jpg) center/cover no-repeat;
+    height: 500px;
+    color: #fff;
+    background-position: 50% 0;
+    bottom: -1px;
+    left: -1px;
+    position: relative;
+    right: -1px;
+    top: -1px;
+    -webkit-transition: -webkit-transform 2.5s;
+    transition: -webkit-transform 2.5s;
+    -o-transition: transform 2.5s;
+    transition: transform 2.5s;
+    transition: transform 2.5s,-webkit-transform 2.5s;
+}
+.react-prized-asset{
+    background: url(../../assets/images/react-prized-asset.jpg) center/cover no-repeat;
+    height: 500px;
+    color: #fff;
+    background-position: 50% 0;
+    bottom: -1px;
+    left: -1px;
+    position: relative;
+    right: -1px;
+    top: -1px;
+    -webkit-transition: -webkit-transform 2.5s;
+    transition: -webkit-transform 2.5s;
+    -o-transition: transform 2.5s;
+    transition: transform 2.5s;
+    transition: transform 2.5s,-webkit-transform 2.5s;
+}
+.overflow-style{
+  overflow: hidden;
+}
+.hire-react-developers{
+  width: 80%;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 45px rgb(0 0 0 / 35%);
+  box-shadow: 0 0 45px rgb(0 0 0 / 35%);
+  flex-wrap: wrap;
+  height: 250px;
+  margin-left: 10%;
+  margin-right: 10%;
+  color: #000;
+}

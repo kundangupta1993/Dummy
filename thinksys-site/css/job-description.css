@@ -1,0 +1,11 @@
+/* single-job css */
+.job-details {
+  background: white;
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: 15px 20px 20px rgb(0 0 0 / 25%);
+}
+.job-details .fa {
+  color: #0D61A2;
+}
+/* end single-job css */

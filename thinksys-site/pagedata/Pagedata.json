@@ -1,0 +1,26 @@
+[
+    {
+        "HybridappPageTitle": "Meta Title",
+        "HybridappPageMetaDescription": "Meta description",
+        "HybridappPageKeywords": "Hybridapp Page Key words",
+        "HybridappPageOgurl": "Hybridapp Page Og url",
+        "HybridappPageOgtitle": 1,
+        "HybridappPageOgdescription": 2,
+        "HybridappPageOgimage": 3,
+        "HybridappPageTwitterurl": 4,
+        "HybridappPageTwittertitle": 5,
+        "HybridappPageTwitterdescription": 6,
+        "HybridappPageTwitterimage": 7,
+        "HybridappPageTobotscontent1": 8,
+        "HybridappPageTobotscontent2": 9,
+        "HybridappPageMainEntityOfPageid": 10,
+        "HybridappPagejsonheadline": 11,
+        "HybridappPagejsondescription": 12,
+        "HybridappPagejsonimage": 13,
+        "HybridappPagejsonauthorName": 14,
+        "HybridappPagejsonpublisherName": 15,
+        "HybridappPagejsonpublisherUrl": 16,
+        "HybridappPagejsonDatePublished": 17,
+        "HybridappPagejsonDateModified": 18
+    }
+]

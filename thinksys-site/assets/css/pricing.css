@@ -1,0 +1,43 @@
+.pricing-banner {
+  background-image: url("../../assets/images/aboutbanner.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.plan-wrap {
+  background: white;
+    box-shadow: 1px 1px 8px 0px rgb(0 0 0 / 50%);
+    border-radius: 10px;
+    transition: 300ms all;
+}
+.plan-wrap:hover {
+  box-shadow: 0px 60px 40px -40px rgb(0 0 0 / 50%);
+  transform: translateY(-20px)
+}
+
+.plan-wrap .plan-content {
+  min-height: 310px;
+}
+
+.plan-wrap .plan-content .plan-list {
+  min-height: 130px;
+}
+
+.plan-wrap .plan-content .plan-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.plan-wrap .plan-content .plan-list ul li {
+  text-align: center;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #bfd2f9;
+  padding-bottom: 10px;
+}
+
+.plan-wrap .plan-content .plan-list ul li:last-child {
+  margin-bottom: 0px;
+  border-bottom: none;
+  padding-bottom: 0px;
+}

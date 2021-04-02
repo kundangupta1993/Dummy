@@ -1,0 +1,39 @@
+
+ul.menu-list-of-services li {
+    font-size: 12px;
+    display: block;
+    padding: 10px 0;
+    position: relative;
+}
+
+ul.menu-list-of-services ul {
+    padding-left: 20px;
+}
+ul.menu-list-of-services li:hover {
+    opacity: 1;
+    color: #0d61a2;
+}
+
+ul.menu-list-of-services li::before {
+    width: 0px;
+    position: absolute;
+    content: "";   
+    left: 0px;
+    opacity: 0;
+    bottom: 5px;
+    background: #0d61a2;
+    height: 1px;
+}
+
+ul.menu-list-of-services li:hover::before {
+    opacity: 1;
+    width: 100px; 
+    transition: all 500ms ease-in-out;
+}
+.menu-item-has-children::before {
+    opacity: 0 !important;
+}
+
+.card-body {
+  padding: 1.25rem 2.25rem;
+}

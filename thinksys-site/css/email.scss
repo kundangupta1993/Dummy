@@ -1,0 +1,89 @@
+// .email-solution-section {
+//   display: flex;
+//   align-items: center;
+//   height: 400px;
+//   box-shadow: 0px 0px 20px #9c9c9c;
+//   border-radius: 10px;
+//   overflow: hidden;
+//   background: white;
+//   .email-solution-img {
+//     width: 50%;
+//     flex: none;
+//     position: relative;
+//     &:after {
+//       content: "";
+//       width: 0;
+//       height: 0;
+//       position: absolute;
+//       top: 0;
+//       right: 0;
+//       z-index: 3;
+//       border-bottom: 400px solid white;
+//       border-left: 60px solid transparent;
+//     }
+//     .email-gallery-thumbs {
+//       .swiper-wrapper {
+//         .swiper-slide {
+//           background-position: center;
+//           background-size: cover;
+//           background-repeat: no-repeat;
+//           height: 400px;
+//           display: flex;
+//           align-items: center;
+//           justify-content: center;
+//           color: white;
+//           h2 {
+//             font-size: 40px;
+//             font-weight: 900;
+//             text-shadow: 2px 2px 3px black;
+//           }
+//           &:before {
+//             content: "";
+//             position: absolute;
+//             left: 0;
+//             top: 0;
+//             width: 100%;
+//             height: 100%;
+//             background: rgba(0, 0, 0, 0.70);
+//             z-index: -1;
+//           }
+//         }
+//       }
+//     }
+//   }
+//   .email-solution-content {
+//     width: 50%;
+//     height: 100%;
+//     padding: 0px 50px;
+//     .email-solution-swiper {
+//       height: 100%;
+//       .swiper-wrapper {
+//         height: 100%;
+//         .swiper-slide {
+//           display: flex;
+//           align-items: center;
+//           height: 100%;
+//         }
+//       }
+//     }
+//     .swiper-button-next, .swiper-button-prev {
+//       height: 50px;
+//       width: 50px;
+//       border-radius: 50%;
+//       box-shadow: 0px 0px 10px #7d7d7d;
+//       background: white;
+//       outline: 0;
+//       &:after {
+//         font-size: 20px;
+//         color: black;
+//       }
+//     }
+//     .swiper-button-next {
+//       right: -10px;
+//     }
+//     .swiper-button-prev {
+//       left: -10px;
+//     }
+//   }
+// }
+

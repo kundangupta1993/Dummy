@@ -1,0 +1,95 @@
+
+ul.menu-list-of-services li {
+    font-size: 12px;
+    display: block;
+    padding: 10px 0;
+    position: relative;
+}
+
+ul.menu-list-of-services ul {
+    padding-left: 20px;
+}
+ul.menu-list-of-services li:hover {
+    opacity: 1;
+    color: #0d61a2;
+}
+
+ul.menu-list-of-services li::before {
+    width: 0px;
+    position: absolute;
+    content: "";   
+    left: 0px;
+    opacity: 0;
+    bottom: 5px;
+    background: #0d61a2;
+    height: 1px;
+}
+
+ul.menu-list-of-services li:hover::before {
+    opacity: 1;
+    width: 100px; 
+    transition: all 500ms ease-in-out;
+}
+.menu-item-has-children::before {
+    opacity: 0 !important;
+}
+.aj-top-feature{
+  min-height: 180px;
+}
+.chat-dev-feature .aj-top-feature{
+  min-height: 300px;
+}
+.rpa-process .aj-top-feature{
+  min-height: 340px;
+}
+.devops-service .devops-feature{
+  min-height: 345px;
+}
+.Tech-Expertise .tech-box{
+  min-height: 200px;
+}
+.fun-testing-service .fun-testing{
+  min-height: 200px;
+}
+.full-stack-appli .full-stack img{
+  height: 300px;
+  object-fit: cover;
+}
+.full-stack-laravel .full-stack-box{
+  min-height: 255px;
+}
+.shopify-dev .shopify-dev-box{
+  min-height: 280px;
+}
+@media screen and (max-width: 768px) {
+  .devops-service .devops-feature {
+    min-height: 405px;
+  }
+  .fun-testing-service .fun-testing {
+    min-height: 250px;
+}
+.full-stack-laravel .full-stack-box {
+  min-height: 310px;
+}
+/* .full-stack-laravel .full-stack-box {
+  background: white;
+  color: #000!important;
+}  */
+.aj-top-feature {
+  min-height: 215px;
+}
+}
+@media screen and (max-width: 480px) {
+  .devops-service .devops-feature {
+    min-height: auto;
+  }
+  .fun-testing-service .fun-testing {
+    min-height: auto;
+}
+.full-stack-laravel .full-stack-box {
+  min-height: auto;
+}
+.aj-top-feature {
+  min-height: auto;
+}
+}
