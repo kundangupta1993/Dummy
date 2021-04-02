@@ -1,0 +1,45 @@
+<html>
+<head>
+<style>
+.main-content {
+  width: 100%;
+  background-color: darkgrey;
+}
+.content {
+   display: flex;
+   align-items: flex-end;
+   height: 400px;
+}
+
+.bottom-bar {  
+  width: 100%;
+  background-color: blue;
+}
+
+.bottom-bar.space { 
+   visibility: hidden; /* hides the element but keeps it space*/
+} 
+
+.bottom-bar.fixed {  
+  position: fixed;
+  bottom: 0;
+}
+</style>
+</head>
+<body>
+
+    <div class="main-content">
+        <div class='content'>Test Content</div>
+    
+      <div class="bottom-bar space">
+        I'm covering up the<br> Copyright text
+      </div>
+      <div class="bottom-bar fixed">
+        I'm covering up the<br> Copyright text
+      </div>
+    
+      </div>
+
+
+</body>
+</html>
